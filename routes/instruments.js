@@ -1,14 +1,13 @@
 const { Router } = require('express')
-const controllers = require('../controllers/products')
+const controllers = require('../controllers/instruments')
 const restrict = require('../helpers/restrict')
 
 const router = Router()
 
-router.get('/', controllers.getProducts)
-router.get('/:id', controllers.getProduct)
-router.post('/', restrict, controllers.createProduct)
-// define the post express route for a product and make it restricted
-// define the put express route for a product and make it restricted
-// define the delete express route for a product and make it restricted
+router.get('/', controllers.getInstruments)
+router.get('/:id', controllers.getInstrument)
+router.post('/', restrict, controllers.createInstrument)
+router.put('/:id', restrict, controllers.updateInstrument)
+router.delete('/:id', restrict, controllers.deleteInstrument)
 
 module.exports = router
