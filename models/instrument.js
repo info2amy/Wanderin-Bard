@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const Product = new Schema(
+const Instrument = new Schema(
   {
     name: { type: String, required: true },
     imgURL: { type: String, required: true },
