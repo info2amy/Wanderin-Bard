@@ -1,4 +1,6 @@
 import './App.css';
+import React, { useState, useEffect } from 'react'
+import { verifyUser } from './services/users'
 
 function App() {
   const [user, setUser] = useState(null)
