@@ -70,9 +70,10 @@ return <Redirect to={`/products`} />;
               onChange={handleChange}
             />
           </div>
-          <input
+          <textarea
             placeholder="Description"
-            type="text"
+              type="text"
+              rows={7}
             value={product.description}
             name="description"
             class="login-field"
