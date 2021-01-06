@@ -6,8 +6,8 @@ const router = Router()
 
 router.get('/', controllers.getInstruments)
 router.get('/:id', controllers.getInstrument)
-router.post('/', restrict, controllers.createInstrument)
-router.put('/:id', restrict, controllers.updateInstrument)
-router.delete('/:id', restrict, controllers.deleteInstrument)
+router.post('/',controllers.createInstrument)
+router.put('/:id' , controllers.updateInstrument)
+router.delete('/:id', controllers.deleteInstrument)
 
 module.exports = router
