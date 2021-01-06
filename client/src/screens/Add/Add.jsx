@@ -2,8 +2,9 @@ import React from "react";
 import { createProduct } from "../../services/products.js";
 import { Redirect } from "react-router-dom";
 import { useState } from "react";
+import Layout from "../../components/shared/Layout/Layout";
 
-const Add = () => {
+const Add = (props) => {
   // const [name, setName] = useState("");
   // const [ImgUrl, setImgUrl] = useState("");
   // const [description, setDescription] = useState("");
@@ -37,7 +38,7 @@ const Add = () => {
   };
 
   if (isCreated) {
-    return <Redirect to={`/products`} />;
+return <Redirect to={`/products`} />;
   }
   console.log("MyProduct", product);
   return (
