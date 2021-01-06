@@ -35,7 +35,7 @@
   input, textarea {
   text-align: center;
   background-color: #ECF0F1;
-  border: 2px solid transparent;
+  border: 2px solid black;
   border-radius: 3px;
   font-size: 16px;
   font-weight: 200;
@@ -44,6 +44,7 @@
   transition: border .5s;
   margin-bottom: 10px;
   color: #777;
+
   }
   textarea:focus{
     text-align: justify;
@@ -64,7 +65,7 @@
     text-decoration: none;
     text-shadow: none;
     border-radius: 3px;
-    box-shadow: none;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
     transition: 0.25s;
     display: block;
     width: 250px;
