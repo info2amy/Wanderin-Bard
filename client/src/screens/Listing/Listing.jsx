@@ -3,7 +3,7 @@ import './Listing.css'
 import Product from '../../components/Product/Product'
 import Search from '../../components/Search/Search'
 //import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort"
-//import Sort from '../../components/Sort/Sort'
+import Sort from '../../components/Sort/Sort'
 import Layout from '../../components/shared/Layout/Layout'
 import { getProducts } from '../../services/products'
 
@@ -54,8 +54,12 @@ const Products = (props) => {
 
   return (
     <Layout user={props.user}>
-      <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      <Sort onSubmit={handleSubmit} onChange={handleSort} />
+      <Search onSubmit={handleSubmit} 
+      // onChange={handleSearch} 
+      />
+      <Sort onSubmit={handleSubmit}
+      //onChange={handleSort} 
+      />
       <div className="products">
         {/* {productsJSX} */}
         {allProducts}
