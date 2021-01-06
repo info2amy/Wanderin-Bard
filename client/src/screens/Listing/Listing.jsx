@@ -15,7 +15,6 @@ const Listing = (props) => {
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getProducts()
-      console.log(products);
       setAllProducts(products)
       setQueriedProducts(products)
     }
