@@ -3,6 +3,7 @@ import { createProduct } from "../../services/products.js";
 import { Redirect } from "react-router-dom";
 import { useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
+import './Add.css'
 
 const Add = (props) => {
   // const [name, setName] = useState("");
