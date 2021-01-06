@@ -4,12 +4,7 @@ import { Redirect } from "react-router-dom";
 import { useState } from "react";
 
 const Add = () => {
-  // const [name, setName] = useState("");
-  // const [ImgUrl, setImgUrl] = useState("");
-  // const [description, setDescription] = useState("");
-  // const [price, setPrice] = useState("");
-  // const [category, setCategory] = useState("");
-  // const [origin, setOrigin] = useState("");
+ 
 
   const [product, setProduct] = useState({
     name: "",
