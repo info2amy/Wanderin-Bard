@@ -1,0 +1,20 @@
+#signup-h3 {
+  color: #f0c6a4;
+  font-size: 150%;
+}
+.signup-input {
+  background-color: #f7dec9;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  margin: 0 auto;
+  width: 30px;
+}
+#buttonId {
+  background-color: #76323f;
+  box-shadow: 15px 15px 15px rgba(68, 68, 68, 0.6);
+  color: #f0dbca;
+}
+.form-container {
+  color: #f2e7de;
+  background-color: #438496;
+  margin: 0px;
+}
