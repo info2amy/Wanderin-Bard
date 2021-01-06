@@ -51,7 +51,7 @@ const SignUp = (props) => {
       );
     } else {
       return (
-        <button id="buttonId" type="submit">
+        <button id="signup-button" type="submit">
           Sign Up
         </button>
       );
@@ -62,51 +62,47 @@ const SignUp = (props) => {
 
   return (
     <div className="form-container">
-      <h3 id="signup-h3">Sign Up</h3>
-      <form onSubmit={onSignUp}>
-        <label>Username</label>
-        <input
-          className="signup-input"
-          required
-          type="text"
-          name="username"
-          value={username}
-          placeholder="Enter username"
-          onChange={handleChange}
-        />
-        <label>Email address</label>
-        <input
-          className="signup-input"
-          required
-          type="email"
-          name="email"
-          value={email}
-          placeholder="Enter email"
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          className="signup-input"
-          required
-          name="password"
-          value={password}
-          type="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <label>Password Confirmation</label>
-        <input
-          className="signup-input"
-          required
-          name="passwordConfirmation"
-          value={passwordConfirmation}
-          type="password"
-          placeholder="Confirm Password"
-          onChange={handleChange}
-        />
-        {renderError()}
+        <h1>Sign Up</h1>
+        <form onSubmit={onSignUp}>
+          <input
+            required
+            type="text"
+            name="username"
+            value={username}
+            placeholder="Enter username"
+            onChange={handleChange}
+            id="signup-login0"
+          />
+          <input
+            required
+            type="email"
+            name="email"
+            value={email}
+            placeholder="Enter email"
+            onChange={handleChange}
+            id="signup-login1"
+          />
+          <input
+            required
+            name="password"
+            value={password}
+            type="password"
+            placeholder="Password"
+            onChange={handleChange}
+            id="signup-login2"
+          />
+          <input
+            required
+            name="passwordConfirmation"
+            value={passwordConfirmation}
+            type="password"
+            placeholder="Confirm Password"
+            onChange={handleChange}
+            id="signup-login3"
+          />
+          {renderError()}
         </form>
-        </div>
+      </div>
   );
 };
 
