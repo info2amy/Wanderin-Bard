@@ -2,8 +2,9 @@ import React from "react";
 import {createProduct} from "../../services/products.js";
 import { Redirect } from 'react-router-dom';
 import { useState } from "react";
+import Layout from "../../components/shared/Layout/Layout";
 
-const Add = () => {
+const Add = (props) => {
   // const [name, setName] = useState("");
   // const [ImgUrl, setImgUrl] = useState("");
   // const [description, setDescription] = useState("");
@@ -39,8 +40,9 @@ const Add = () => {
   if (isCreated) {
     return <Redirect to={`/products`} />
   }
-  console.log('MyProduct',product)
+ 
   return (
+    <Layout user={props.user}>
     <div>
       <form onSubmit={handleSubmit} className="addForm">
         <input
@@ -94,7 +96,8 @@ const Add = () => {
         />
          <input type="submit" value="Submit" />
       </form>
-    </div>
+      </div>
+      </Layout>
   );
 };
 
