@@ -43,6 +43,7 @@ return <Redirect to={`/products`} />;
   }
   console.log("MyProduct", product);
   return (
+    <Layout user={props.user}>
     <div className="login">
       <div className="login-screen">
         <div className="app-title">
@@ -120,6 +121,7 @@ return <Redirect to={`/products`} />;
         </form>
       </div>
     </div>
+    </Layout>
   );
 };
 
