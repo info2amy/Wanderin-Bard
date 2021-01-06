@@ -1,46 +1,98 @@
 import React from "react";
+import {createProduct} from "../../services/products.js";
+import { Redirect } from 'react-router-dom';
+import { useState } from "react";
 
 const Add = () => {
-  const [name, setName] = useState("");
-  const [ImgUrl, setImgUrl] = useState("");
-  const [description, setDescription] = useState("");
-  const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("");
-  const [origin, setOrigin] = useState("");
+  // const [name, setName] = useState("");
+  // const [ImgUrl, setImgUrl] = useState("");
+  // const [description, setDescription] = useState("");
+  // const [price, setPrice] = useState("");
+  // const [category, setCategory] = useState("");
+  // const [origin, setOrigin] = useState("");
 
+  const [product, setProduct] = useState({
+    name: '',
+    imgURL: '',
+    description: '',
+    price: '',
+    category: '',
+    origin: ''
+})
+
+  const [isCreated, setCreated] = useState(false)
+  
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setProduct({
+            ...product,
+            [name]: value
+    })
+}
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const created = await createProduct(product)
+    setCreated({ created })
+  }
+
+  if (isCreated) {
+    return <Redirect to={`/instruments`} />
+  }
+  console.log('MyProduct',product)
   return (
     <div>
       <form onSubmit={handleSubmit} className="addForm">
         <input
           placeholder="Instrument Name"
           type="text"
-          onChange={(e) => setName(e.target.value)}
+          value={product.name}
+          name='name'
+          required
+          onChange={handleChange}
+          
         />
         <input
-          placeholder="ImgUrl"
+        placeholder="image Url"
           type="text"
-          onChange={(e) => setImgUrl(e.target.value)}
+          value={product.imgURL}
+          name='imgURL'
+          required
+          onChange={handleChange}
         />
         <input
           placeholder="Description"
           type="text"
-          onChange={(e) => setDescription(e.target.value)}
+          value={product.description}
+          name='description'
+          required
+          onChange={handleChange}
         />
         <input
           placeholder="Price"
           type="text"
-          onChange={(e) => setPrice(e.target.value)}
+          value={product.price}
+          name='price'
+          required
+          onChange={handleChange}
         />
         <input
           placeholder="Category"
           type="text"
-          onChange={(e) => setCategory(e.target.value)}
+          value={product.category}
+          name='category'
+          required
+          onChange={handleChange}
         />
         <input
           placeholder="Origin"
           type="text"
-          onChange={(e) => setOrigin(e.target.value)}
+          value={product.origin}
+          name='origin'
+          required
+          onChange={handleChange}
         />
+         <input type="submit" value="Submit" />
       </form>
     </div>
   );

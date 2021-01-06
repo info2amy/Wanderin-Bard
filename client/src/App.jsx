@@ -11,6 +11,8 @@ import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 
+
+
 function App() {
   const [user, setUser] = useState(null)
 
@@ -26,6 +28,7 @@ function App() {
   
   return (
     <div className="App">
+
       <Switch>
       <Route exact path="/">
           <Landing user={user} />
