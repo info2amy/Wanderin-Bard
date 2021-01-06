@@ -28,9 +28,9 @@
   .login-form {
   text-align: center;
   }
-  .control-group {
+  /* .control-group {
   margin-bottom: 10px;
-  }
+  } */
   
   input {
   text-align: center;
@@ -42,6 +42,7 @@
   padding: 10px 0;
   width: 350px;
   transition: border .5s;
+  margin-bottom: 10px;
   }
   
   input:focus {
