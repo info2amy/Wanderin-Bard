@@ -6,12 +6,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import './Add.css'
 
 const Add = (props) => {
-  // const [name, setName] = useState("");
-  // const [ImgUrl, setImgUrl] = useState("");
-  // const [description, setDescription] = useState("");
-  // const [price, setPrice] = useState("");
-  // const [category, setCategory] = useState("");
-  // const [origin, setOrigin] = useState("");
+ 
 
   const [product, setProduct] = useState({
     name: "",
@@ -116,7 +111,7 @@ return <Redirect to={`/products`} />;
             required
             onChange={handleChange}
           />
- <button class="btn btn-primary btn-large btn-block">
+ <button class="btn">
             Submit
           </button>
         </form>
