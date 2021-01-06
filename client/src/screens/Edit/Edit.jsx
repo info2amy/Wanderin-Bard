@@ -4,7 +4,7 @@ import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/shared/Layout/Layout'
 import { getProduct, updateProduct } from '../../services/products'
 
-const ProductEdit = (props) => {
+const Edit = (props) => {
 
     const [product, setProduct] = useState({
             name: '',
@@ -95,4 +95,4 @@ const ProductEdit = (props) => {
     )
 }
 
-export default ProductEdit
+export default Edit

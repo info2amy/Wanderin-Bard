@@ -2,7 +2,8 @@ import api from './apiConfig'
 
 export const getProducts = async () => {
   try {
-      const response = await api.get('/instruments')
+    const response = await api.get('/instruments')
+    console.log(response.data);
       return response.data
   } catch (error) {
       throw error

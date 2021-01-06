@@ -37,7 +37,7 @@ const Add = () => {
   }
 
   if (isCreated) {
-    return <Redirect to={`/instruments`} />
+    return <Redirect to={`/products`} />
   }
   console.log('MyProduct',product)
   return (
