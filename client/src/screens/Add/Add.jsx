@@ -5,7 +5,7 @@ import { useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import './Add.css'
 
-const Add = () => {
+const Add = (props) => {
  
 
   const [product, setProduct] = useState({
