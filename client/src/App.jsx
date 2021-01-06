@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import Add from './screens/Add/Add'
 import Detail from './screens/Detail/Detail'
+import Edit from './screens/Edit/Edit'
 import Landing from './screens/Landing/Landing'
 import Listing from './screens/Listing/Listing'
 import SignUp from './screens/SignUp/SignUp'
@@ -48,7 +49,7 @@ function App() {
           {user ? <Add user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/products/:id/edit">
-          {user ? <ProductEdit user={user} /> : <Redirect to='/' />}
+          {user ? <Edit user={user} /> : <Redirect to='/' />}
         </Route>
         <Route exact path="/products/:id">
           <Detail user={user} />
