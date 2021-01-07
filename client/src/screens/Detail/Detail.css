@@ -2,18 +2,22 @@
   display: flex;
   padding: 100px;
   padding-top: 80px;
+  color: #15363f;
 }
 
 .detail {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
+  background-color: #B37D4E;
+  padding: 10px;
 }
 
 .name {
   font-size: 64px;
   letter-spacing: 1px;
   padding: 5px;
+  color: #55252f;
 }
 
 .price {
@@ -48,6 +52,7 @@
   border: none;
   box-shadow: 2px 2px 10px 2px #CECECE;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .edit-link {
