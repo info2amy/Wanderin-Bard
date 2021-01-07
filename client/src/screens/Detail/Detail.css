@@ -1,3 +1,7 @@
+#additional-pictures-text {
+  text-indent: 20px;
+  margin: 10px;
+}
 .detail-parent-div {
   display: flex;
   padding: 100px;
@@ -11,6 +15,13 @@
   line-height: 1.6;
   background-color: #B37D4E;
   padding: 10px;
+}
+.detail-extra-photo-div {
+  width: 40%;
+  margin: 10px;
+  align-self: center;
+  border: 1px solid #35161c;
+  box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
 }
 
 .name {
@@ -30,14 +41,24 @@
 }
 
 .detail-image {
-  width: 500px;
-  padding: 0 40px;
+  width: 480px;
+  height: 100%;
+  margin: 10px;
+  border: 1px solid #284f59;
+  box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
 }
 
 .button-container {
   display: flex;
+   justify-content: space-evenly; 
+  }
+ 
+
+.detail-extra-photo-container {
+  display: flex; 
   justify-content: space-evenly;
-}
+  flex-wrap: wrap;
+ } 
 
 .edit-button, .delete-button {
   font-size: 22px;
