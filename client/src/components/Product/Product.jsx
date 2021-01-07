@@ -7,8 +7,12 @@ const Product = (props) => {
     <>
     <Link className="product" to={`/products/${props._id}`}>
         <img className="product-image" src={props.imgURL} alt={props.name} />
+        <div className='text-background'>
         <div className="product-name">{props.name}</div>
-        <div className="price">{`$${props.price}`}</div>
+        <div className='line'></div>
+        <div className="price">{`$${props.price}`}
+        </div>
+        </div>
     </Link>
     </>
   );
