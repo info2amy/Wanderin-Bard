@@ -36,9 +36,15 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="navbar">
-        <NavLink className="logo" to="/">
+        <NavLink className="ProductsAppHome" to="/">
           ProductsApp
         </NavLink>
+        <div className="logo">
+          <img
+            src="../../../../logo/logo-maker-for-a-stationery-supply-store-1380i-294-el (1).png"
+            alt="our logo"
+          />
+        </div>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
           {alwaysOptions}

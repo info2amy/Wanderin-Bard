@@ -1,9 +1,14 @@
 nav {
+  display: flex;
   width: 100%;
-  background-color: #438496;
+  background-color: #fadab2;
 }
 
 .navbar {
-  display: flex;
   width: 100%;
 }
+
+/* .logo {
+  width: 100vw;
+  height: 100px;
+} */
