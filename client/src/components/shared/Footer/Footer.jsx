@@ -12,7 +12,6 @@ const Footer = () => {
       <GrInstagram size="1.6em" color="black" />
       <GrPinterest size="1.6em" color="black" />
       <GrMailOption size="1.7em" color="black" />
-      {/* <FaUserCircle size="2em" color="black" /> */}
     </footer>
   );
 };
