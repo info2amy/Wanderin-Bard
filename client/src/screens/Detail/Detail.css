@@ -61,9 +61,7 @@
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   align-self: center;
 }
-.detail-text {
-  margin-bottom: 100px;
-}
+
 
 .button-container {
   display: flex;
