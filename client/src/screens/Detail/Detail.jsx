@@ -7,11 +7,7 @@ import { useParams, Link, useHistory } from "react-router-dom";
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const [imageAddresses, setImageAddresses] = useState([
-    "https://2.bp.blogspot.com/-_lgP4zMbsEY/Uf1ge4FiYlI/AAAAAAAAAEQ/hWrZmyb_pQc/s1600/Sarangi.jpg",
-    "https://images.reverb.com/image/upload/s--JHR_M82D--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530594/fkah9h3xxjsoexrpp2j7.jpg",
-    "https://images.reverb.com/image/upload/s--piJ5wn3p--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530596/i3jrgqupxnfch9wrvqcu.jpg",
-  ]);
+  const [imageAddresses, setImageAddresses] = useState([]);
   const [mainPicImageAddress, setMainPicImageAddress] = useState();
   const { id } = useParams();
   const history = useHistory();
@@ -21,7 +17,8 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      const imageAddressUpdated = [...imageAddresses, product.imgURL];
+      const imageAddressUpdated = [...imageAddresses, product.imgURL, product.img2URL, product.img3URL, product.img4URL];
+      console.log(product)
       setImageAddresses(imageAddressUpdated);
       setMainPicImageAddress(product.imgURL);
     };
