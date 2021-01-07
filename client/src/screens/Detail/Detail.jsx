@@ -12,7 +12,7 @@ const Detail = (props) => {
     "https://images.reverb.com/image/upload/s--JHR_M82D--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530594/fkah9h3xxjsoexrpp2j7.jpg",
     "https://images.reverb.com/image/upload/s--piJ5wn3p--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530596/i3jrgqupxnfch9wrvqcu.jpg",
   ]);
-  const [mainPicImageAddress,setMainPicImageAddress] = useState()
+  const [mainPicImageAddress, setMainPicImageAddress] = useState();
   const { id } = useParams();
   const history = useHistory();
 
@@ -23,7 +23,7 @@ const Detail = (props) => {
       setLoaded(true);
       const imageAddressUpdated = [...imageAddresses, product.imgURL];
       setImageAddresses(imageAddressUpdated);
-      setMainPicImageAddress(product.imgURL)
+      setMainPicImageAddress(product.imgURL);
     };
     fetchProduct();
   }, [id]);
@@ -39,11 +39,35 @@ const Detail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="detail-parent-div">
-        <img className="detail-image" src={mainPicImageAddress} alt={product.name} />
+        <div className="detail-leftside">
+          <img
+            className="detail-image"
+            src={mainPicImageAddress}
+            alt={product.name}
+          />
+          <em id="additional-pictures-text">Additional Pictures: </em>
+          <div className="detail-extra-photo-container">
+            {imageAddresses.map((item) => {
+              return (
+                <img
+                  className="detail-extra-photo-div"
+                  src={item}
+                  alt={product.name}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMainPicImageAddress(item);
+                  }}
+                />
+              );
+            })}
+          </div>
+        </div>
         <div className="detail">
+          <div className = "detail-text">
           <div className="name">{product.name}</div>
-          <div className="price">{`$${product.price}`}</div>
-          <div className="description">{product.description}</div>
+          <div className="price"><h2>{`$${product.price}`}</h2></div>
+            <div className="description">{product.description}</div>
+          </div>
           <div className="button-container">
             <button className="edit-button">
               <Link className="edit-link" to={`/products/${product._id}/edit`}>
@@ -53,21 +77,6 @@ const Detail = (props) => {
             <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>
-          </div>
-          <em id="additional-pictures-text">Additional pictures: </em>
-          <div className="detail-extra-photo-container">
-            <div className="detail-extra-photo-container">
-              {imageAddresses.map((item) => {
-                return (
-                  <img
-                    className="detail-extra-photo-div"
-                    src={item}
-                    alt={product.name}
-                    onClick={(e) => { e.preventDefault();setMainPicImageAddress(item) }}
-                  />
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>
