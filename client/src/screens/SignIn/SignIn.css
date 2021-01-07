@@ -10,11 +10,7 @@ body {
 
 button {
   cursor: pointer;
-  font-size: 1rem;
-  padding: 0.6em 1em;
   border-radius: 3px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
 }
 
 .navbar {
@@ -84,22 +80,28 @@ button {
 
 .form-container form input {
   /* width: 100%; */
-  padding: 0.6em 1em;
   margin: 0.5em auto;
-  font-size: 1rem;
   border-radius: 3px;
-  border: 2px solid #e0e0e0;
   outline: none;
   transition: all 0.4s ease;
+  text-align: center;
+  background-color: #ecf0f1;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 350px;
+  margin-bottom: 10px;
+  color: #777;
 }
 
 .form-container form input:focus,
 .form-container form input:active {
-  border: 2px solid #82ada9;
+  border: 2px solid #438496;
 }
 
 .form-container form input:valid {
-  border: 2px solid #66bb6a;
+  border: 2px solid #438496;
 }
 
 .form-container form button {
@@ -328,4 +330,24 @@ button {
   grid-template-rows: auto;
   width: 80%;
   margin: 4em auto;
+}
+
+#signin-button {
+  border: 2px solid transparent;
+  background: #B37D4E;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+#signin-button:hover {
+  background-color: #2980b9;
 }
