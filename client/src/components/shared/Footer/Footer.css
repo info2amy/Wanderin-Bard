@@ -1,6 +1,5 @@
 footer {
   display: flex;
-  /* display: inline-block; */
   width: 100%;
   justify-content: space-around;
   background-color: #fadab2;
