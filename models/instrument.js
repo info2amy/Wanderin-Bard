@@ -11,7 +11,8 @@ const Instrument = new Schema(
     description: { type: String, required: true },
     price: { type: String, required: true },
     category: { type: String, required: true },
-    origin: { type: String, required: true }
+    origin: { type: String, required: true },
+    sale: {type: Boolean, required: false}
   },
   { timestamps: true }
 )

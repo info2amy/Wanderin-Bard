@@ -17,8 +17,14 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      const imageAddressUpdated = [...imageAddresses, product.imgURL, product.img2URL, product.img3URL, product.img4URL];
-      console.log(product)
+      const imageAddressUpdated = [
+        ...imageAddresses,
+        product.imgURL,
+        product.img2URL,
+        product.img3URL,
+        product.img4URL,
+      ];
+      console.log(product);
       setImageAddresses(imageAddressUpdated);
       setMainPicImageAddress(product.imgURL);
     };
@@ -32,7 +38,6 @@ const Detail = (props) => {
     deleteProduct(product._id);
     history.push("/products");
   };
-
   return (
     <Layout user={props.user}>
       <div className="detail-parent-div">
@@ -60,9 +65,11 @@ const Detail = (props) => {
           </div>
         </div>
         <div className="detail">
-          <div className = "detail-text">
-          <div className="name">{product.name}</div>
-          <div className="price"><h2>{`$${product.price}`}</h2></div>
+          <div className="detail-text">
+            <div className="name">{product.name}</div>
+            <div className="price">
+              <h2>{`$${product.price}`}</h2>
+            </div>
             <div className="description">{product.description}</div>
           </div>
           <div className="button-container">
