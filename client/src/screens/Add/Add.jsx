@@ -45,7 +45,6 @@ return <Redirect to={`/products`} />;
           <h1>Register A New Product</h1>
         </div>
         <form onSubmit={handleSubmit} className="login-form">
-          <div className="control-group">
             <input
               placeholder="Product Name"
               type="text"
@@ -56,9 +55,6 @@ return <Redirect to={`/products`} />;
               required
               onChange={handleChange}
             />
-          </div>
-
-          <div className="control-group">
             <input
               placeholder="imageUrl"
               type="text"
@@ -69,7 +65,6 @@ return <Redirect to={`/products`} />;
               required
               onChange={handleChange}
             />
-          </div>
           <textarea
             placeholder="Description"
               type="text"
@@ -110,7 +105,7 @@ return <Redirect to={`/products`} />;
             id="login-pass"
             required
             onChange={handleChange}
-          />
+              />           
  <button className="btn">
             Submit
           </button>

@@ -20,13 +20,17 @@ nav {
   border-radius: 50%;
 }
 
-/* .link {
-  text-decoration: none;
-  align-content: center;
-  color: #565656;
-} */
-
 .link:hover {
   transform: scale(1.05);
-  color: #438496;
+  color: #565656;
+  /* background-color: #438496; */
 }
+.link{
+  margin: 0 1em;
+  color: #565656;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+  align-content: center;
+}
+
