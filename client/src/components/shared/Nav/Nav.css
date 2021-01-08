@@ -2,6 +2,7 @@ nav {
   display: flex;
   width: 100%;
   background-color: #fae3c7;
+  color: #565656;
 }
 
 .navbar {
@@ -11,21 +12,21 @@ nav {
 
 .logo {
   width: 175px;
-  /* display: block;
-  margin: auto; */
+  display: block;
+  margin: auto;
   text-align: center;
   border: 3px #438496 solid;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin: 10px;
   border-radius: 50%;
 }
 
-.link {
-  flex: 1;
+/* .link {
   text-decoration: none;
+  align-content: center;
   color: #565656;
-}
+} */
 
 .link:hover {
   transform: scale(1.05);
+  color: #438496;
 }
