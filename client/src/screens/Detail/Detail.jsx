@@ -17,16 +17,8 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      const imageAddressUpdated = [
-        ...imageAddresses,
-        product.imgURL,
-        product.img2URL,
-        product.img3URL,
-        product.img4URL,
-      ];
-      console.log(product);
-      setImageAddresses(imageAddressUpdated);
-      setMainPicImageAddress(product.imgURL);
+      setImageAddresses(product.imageAddresses);
+      setMainPicImageAddress(product.imageAddresses[0]);
     };
     fetchProduct();
   }, [id]);
