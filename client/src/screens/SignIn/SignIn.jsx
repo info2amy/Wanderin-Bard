@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignIn.css";
+import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
@@ -50,36 +51,42 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button id="signin-button" type="submit">Sign In</button>;
+      return (
+        <button id="signin-button" type="submit">
+          Sign In
+        </button>
+      );
     }
   };
 
   const { username, password } = form;
 
   return (
-    <div className="form-container">
-      <h1>Sign In</h1>
-      <form onSubmit={onSignIn}>
-        <input
-          required
-          type="text"
-          name="username"
-          value={username}
-          placeholder="Enter Username"
-          onChange={handleChange}
-          id="signin-input"
-        />
-        <input
-          required
-          name="password"
-          value={password}
-          type="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
+    <Layout>
+      <div className="form-container">
+        <h1>Sign In</h1>
+        <form onSubmit={onSignIn}>
+          <input
+            required
+            type="text"
+            name="username"
+            value={username}
+            placeholder="Enter Username"
+            onChange={handleChange}
+            id="signin-input"
+          />
+          <input
+            required
+            name="password"
+            value={password}
+            type="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          {renderError()}
+        </form>
+      </div>
+    </Layout>
   );
 };
 
