@@ -64,7 +64,7 @@ return <Redirect to={`/products`} />;
               type="text"
               value={product.imgURL}
               name="imgURL"
-              class="login-field"
+              className="login-field"
               id="login-pass"
               required
               onChange={handleChange}
