@@ -43,7 +43,7 @@ const SignIn = (props) => {
   };
 
   const renderError = () => {
-    const toggleForm = form.isError ? "danger" : "";
+    const toggleForm = form.isError ? "danger" : "success";
     if (form.isError) {
       return (
         <button type="submit" className={toggleForm}>
@@ -73,7 +73,7 @@ const SignIn = (props) => {
             value={username}
             placeholder="Enter Username"
             onChange={handleChange}
-            id="signin-input"
+            className="signin-input"
           />
           <input
             required
@@ -82,6 +82,7 @@ const SignIn = (props) => {
             type="password"
             placeholder="Password"
             onChange={handleChange}
+            className="signin-input"
           />
           {renderError()}
         </form>
