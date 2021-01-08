@@ -76,7 +76,7 @@ return <Redirect to={`/products`} />;
               rows={7}
             value={product.description}
             name="description"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -86,7 +86,7 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.price}
             name="price"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -96,7 +96,7 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.category}
             name="category"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -106,12 +106,12 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.origin}
             name="origin"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
           />
- <button class="btn">
+ <button className="btn">
             Submit
           </button>
         </form>
