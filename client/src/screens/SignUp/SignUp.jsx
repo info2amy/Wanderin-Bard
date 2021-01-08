@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import Layout from "../../components/shared/Layout/Layout";
 import { signUp, signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
@@ -61,7 +62,8 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-    <div className="form-container">
+    <Layout>
+      <div className="form-container">
         <h1>Sign Up</h1>
         <form onSubmit={onSignUp}>
           <input
@@ -103,6 +105,7 @@ const SignUp = (props) => {
           {renderError()}
         </form>
       </div>
+    </Layout>
   );
 };
 
