@@ -1,11 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaUserCircle } from "react-icons/fa";
 import "./Nav.css";
+import logo from "../../../logo/W.Bard-image.png";
+// import logo from "../../../logo/W.Bard-image-square.png";
 
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/add-product">
-      Add Product
+      Add a Product
     </NavLink>
     <NavLink className="link" to="/sign-out">
       Sign Out
@@ -27,7 +31,7 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/products">
-      Products
+      See Products
     </NavLink>
   </>
 );
@@ -36,13 +40,16 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="navbar">
-        <NavLink className="logo" to="/">
+        {/* <NavLink className="ProductsAppHome" to="/">
           ProductsApp
-        </NavLink>
+        </NavLink> */}
+        <img className="logo" src={logo} alt="our logo" />
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
+          <FaUserCircle size="2em" color="black" />
+          <AiOutlineShoppingCart size="2em" color="black" />
         </div>
       </div>
     </nav>
