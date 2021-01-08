@@ -38,13 +38,14 @@ const settings = {
 const Landing = (props) => {
   return (
     <Layout user={props.user}>
+      <div className='landing-screen'>
       <div className="carousel">
         <Slider {...settings} className="slider">
           {photos.map((photo) => {
             return (
               <div className="photo-info">
                 <div>
-                  <img src={photo.url} />
+                  <img src={photo.url} className='carousel-image'/>
                 </div>
                 <div>
                   <p>{photo.info}</p>
@@ -77,6 +78,8 @@ const Landing = (props) => {
           she kept going back.
         </div>
       </div>
+      </div>
+      
     </Layout>
   );
 };
