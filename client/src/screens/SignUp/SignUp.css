@@ -1,22 +1,14 @@
-
-.form-container {
-  color: #777;
-  background-color: #fff;
-  margin: 20px auto;
+.signup-container {
+  align-self: center;
+  padding: 1em;
+  width: 500px;
+  height: 80%;
+  margin: 4em auto;
+  border: 2px solid #b0bec5;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px #0097a7;
+  transition: all 2s ease;
   text-align: center;
-} 
-
-* {
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-body {
-  font-family: Arial;
-  background-color: #438496;
-  padding: 50px;
 }
 
 #signup-button {
@@ -29,7 +21,7 @@ body {
   text-decoration: none;
   text-shadow: none;
   border-radius: 3px;
-  box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   transition: 0.25s;
   display: block;
   width: 250px;
@@ -38,7 +30,10 @@ body {
 #signup-button:hover {
   background-color: #2980b9;
 }
-#signup-login0,#signup-login1,#signup-login2,#signup-login3 {
+#signup-login0,
+#signup-login1,
+#signup-login2,
+#signup-login3 {
   text-align: center;
   background-color: #ecf0f1;
   border: 2px solid black;
@@ -52,7 +47,10 @@ body {
   color: #777;
 }
 
-#signup-login0:focus,#signup-login1:focus,#signup-login2:focus,#signup-login3:focus {
+#signup-login0:focus,
+#signup-login1:focus,
+#signup-login2:focus,
+#signup-login3:focus {
   border: 2px solid #438496;
   box-shadow: none;
 }

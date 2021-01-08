@@ -45,7 +45,6 @@ return <Redirect to={`/products`} />;
           <h1>Register A New Product</h1>
         </div>
         <form onSubmit={handleSubmit} className="login-form">
-          <div className="control-group">
             <input
               placeholder="Product Name"
               type="text"
@@ -56,27 +55,23 @@ return <Redirect to={`/products`} />;
               required
               onChange={handleChange}
             />
-          </div>
-
-          <div className="control-group">
             <input
               placeholder="imageUrl"
               type="text"
               value={product.imgURL}
               name="imgURL"
-              class="login-field"
+              className="login-field"
               id="login-pass"
               required
               onChange={handleChange}
             />
-          </div>
           <textarea
             placeholder="Description"
               type="text"
               rows={7}
             value={product.description}
             name="description"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -86,7 +81,7 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.price}
             name="price"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -96,7 +91,7 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.category}
             name="category"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
@@ -106,12 +101,12 @@ return <Redirect to={`/products`} />;
             type="text"
             value={product.origin}
             name="origin"
-            class="login-field"
+            className="login-field"
             id="login-pass"
             required
             onChange={handleChange}
-          />
- <button class="btn">
+              />           
+ <button className="btn">
             Submit
           </button>
         </form>

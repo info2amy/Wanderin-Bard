@@ -26,12 +26,18 @@ const Edit = (props) => {
 
 
     const handleChange = (event) => {
-        const { name, value } = event.target
+      const { name, value } = event.target
         setProduct({
                 ...product,
                 [name]: value
         })
     }
+  const handleSale = (event) => {
+    setProduct({
+      ...product,
+      sale : event.target.checked 
+    })
+  }
 
     const handleSubmit = async (event) => {
         event.preventDefault()
@@ -87,7 +93,17 @@ const Edit = (props) => {
                         name='description'
                         required
                         onChange={handleChange}
-                    />
+            />
+            <div className='sale'>
+            <label htmlFor="sale">Sale</label>
+            <input
+              name='sale'
+                type='checkbox'
+                checked={product.sale}
+              onChange={handleSale}
+            />
+            </div>
+                    
                     <button type='submit' className="save-button">Save</button>
                 </form>
             </div>
