@@ -20,8 +20,11 @@
   font-size: 130%;
   position: relative;
   align-self: flex-start;
+  /* margin-top: -100px; */
 }
 .detail-extra-photo-div {
+  /* width: 150px; */
+  /* height: 200px; */
   width: 80px;
   height: 80px;
   align-self: center;
@@ -59,7 +62,8 @@
   height: 500px;
   width: 500px;
   object-fit: scale-down;
-  margin: 5px;
+  margin: 15px;
+  padding: 10px;
   border: 1px solid #284f59;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   align-self: center;
@@ -76,7 +80,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 400px;
+  width: 550px;
 }
 
 .edit-button,
@@ -100,119 +104,63 @@
   color: white;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 300px) {
   .detail-parent-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
   }
-  .detail {
-    width: 90%;
-    margin: 0 auto;
+  .detail-image {
+    width: 150%;
+    height: 150%;
   }
   .name {
-    font-size: 60%;
+    font-size: 200%;
+  }
+  .edit-button,
+  .delete-button {
+    width: 70%;
   }
   .detail-extra-photo-container {
-    width: 250px;
-    margin: 0 auto;
-  }
-  .detail-image {
-    height: 250px;
-    width: 250px;
-    margin: 0 auto;
-  }
-  .detail-extra-photo-div {
-    width: 90px;
-    height: 90px;
-  }
-}
-@media (max-width: 500px) and (min-width: 351px) {
-  .detail-parent-div {
-    margin-left: 80px;
-  }
-  .detail-extra-photo-container {
-    width: 300px;
-    margin: 0 auto;
-  }
-  .detail-image {
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
+    width: 150%;
   }
 }
 
-@media (max-width: 800px) and (min-width: 501px) {
+@media (max-width: 500px) and (min-width: 301px){
   .detail-parent-div {
-    margin-left: 40px;
-  }
-  .detail-image {
-    width: 90%;
-    height: 90%;
-  }
-  .detail-extra-photo-div {
-    width: 30%;
-    height: 30%;
-  }
-  .detail {
-    font-size: 120%;
-    width: 90%;
-  }
-}
-@media (min-width: 801px) {
-  .detail-parent-div {
-    margin-left: -50px;
-  }
-  .detail-image {
-    height: 350px;
-    width: 350px;
-    margin: 20px;
-  }
-  .detail-extra-photo-div {
-    width: 150px;
-    height: 150px;
-  }
-  .detail-extra-photo-container {
-    width: 350px;
-  }
-  .detail {
-    margin: 10px;
-    width: 500px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .name {
-    font-size: 32px;
-  }
-  .detail-image {
-    /* width: 500px; */
-    /* margin-top: -100px; */
-    padding: 10px;
-  }
-  .detail-parent-div {
-  }
-}
-
-@media (max-width: 800px) {
-  .detail-image {
-    /* width: 300px; */
-    /* margin: 15px;
-    padding: 10px; */
-  }
-  .detail-parent-div {
-    padding: 0px;
-    padding-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .button-container {
-    padding: 20px;
-    padding-bottom: 80px;
+  .detail-image {
+    width: 200%;
+    height: 70%;
+  }
+  .edit-button,
+  .delete-button {
+    width: 40%;
+  }
+  .detail-extra-photo-container {
+    width: 150%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 501px){
+  .detail-parent-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-image {
+    width: 70%;
+    margin-top: -80px;
+  }
+  .detail-extra-photo-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 801px) {
+  .detail-image {
+    width: 70%;
+    margin-top: -50px;
   }
   .edit-button,
   .delete-button {
