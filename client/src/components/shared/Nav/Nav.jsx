@@ -43,7 +43,9 @@ const Nav = ({ user }) => {
         {/* <NavLink className="ProductsAppHome" to="/">
           ProductsApp
         </NavLink> */}
-        <img className="logo" src={logo} alt="our logo" />
+        <NavLink className="to-home" to="/">
+          <img className="logo" src={logo} alt="our logo" />
+        </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
           {alwaysOptions}

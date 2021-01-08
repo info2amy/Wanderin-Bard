@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fadab2;
+  background-color: #fbf3e8;
 }
 
 .layout-children {
@@ -10,7 +10,7 @@
   padding: 100px;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .layout {
     height: 100%;
     display: flex;
@@ -24,4 +24,4 @@
     flex-direction: column;
     align-items: center;
   }
-}
+} */
