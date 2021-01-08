@@ -8,6 +8,7 @@ const Instrument = new Schema(
     img2URL: { type: String, required: true },
     img3URL: { type: String, required: true },
     img4URL: { type: String, required: true },
+    imageAddresses: { type: Array, required: true },
     description: { type: String, required: true },
     price: { type: String, required: true },
     category: { type: String, required: true },
