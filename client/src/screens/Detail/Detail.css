@@ -54,8 +54,7 @@
   align-self: flex-start;
 }
 .detail-image {
-  width: 350px;
-  height: 100%;
+  width: 400px;
   margin: 10px;
   border: 1px solid #284f59;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -73,6 +72,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 400px;
 }
 
 .edit-button,
