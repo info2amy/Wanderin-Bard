@@ -1,11 +1,10 @@
 .products {
-  width: 90vw;
+  width: 100%;
   display: flex;
-  
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   align-items: center;
-  padding: 40px;
+  padding: 40px 0 40px 0;
 }
 
 .sort-container {

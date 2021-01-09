@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css'
 import { Link } from 'react-router-dom'
 const Product = (props) => {
-  console.log(Number(props.price));
+
   let sale = Number(props.price) * .9
   return (
     <>
@@ -12,7 +12,6 @@ const Product = (props) => {
         <div className="product-name">{props.name}</div>
           <div className='line'></div>
           {props.sale ? <div className="price"><span className = 'slash'>{`$${props.price}`}</span>-{`$${sale}`}</div> : <div className="price">{`$${props.price}`}</div>}
-        {/* <div className="price">{`$${props.price}`}</div> */}
         </div>
     </Link>
     </>
