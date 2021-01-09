@@ -34,6 +34,7 @@ const Detail = (props) => {
     <Layout user={props.user}>
       <div className="detail-parent-div">
         <div className="detail-leftside">
+  
           <img
             className="detail-image"
             src={mainPicImageAddress}
