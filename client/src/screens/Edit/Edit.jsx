@@ -49,6 +49,13 @@ const Edit = (props) => {
     if (isUpdated) {
         return <Redirect to={`/products/${id}`} />
     }
+    const addimage = (event) => {
+      const { name, value } = event.target;
+      setProduct({
+        ...product,
+        [name]: [...product.imageAddresses, value],
+      });
+    };
 
     return (
         <Layout user={props.user}>
@@ -59,10 +66,10 @@ const Edit = (props) => {
                         <input
                             className="edit-input-image-link"
                             placeholder='Image Link'
-                            value={product.imgURL}
-                            name='imgURL'
+                            value={product.imageAddresses}
+                            name="imageAddresses"
                             required
-                            onChange={handleChange}
+                            onChange={addimage}
                         />
                     </form>
                 </div>

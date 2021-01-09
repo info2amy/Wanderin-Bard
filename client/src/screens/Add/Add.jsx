@@ -10,7 +10,7 @@ const Add = (props) => {
 
   const [product, setProduct] = useState({
     name: "",
-    imgURL: "",
+    imageAddresses: "",
     description: "",
     price: "",
     category: "",
@@ -24,6 +24,13 @@ const Add = (props) => {
     setProduct({
       ...product,
       [name]: value,
+    });
+  };
+  const addimage = (event) => {
+    const { name, value } = event.target;
+    setProduct({
+      ...product,
+      [name]: [...product.imageAddresses, value],
     });
   };
 
@@ -58,12 +65,12 @@ return <Redirect to={`/products`} />;
             <input
               placeholder="imageUrl"
               type="text"
-              value={product.imgURL}
-              name="imgURL"
+              value={product.imageAddresses}
+              name="imageAddresses"
               className="login-field"
               id="login-pass"
               required
-              onChange={handleChange}
+              onChange={addimage}
             />
           <textarea
             placeholder="Description"

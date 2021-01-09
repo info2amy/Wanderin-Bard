@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./Landing.css";
+import { NavLink } from "react-router-dom";
 
 const photos = [
   {
@@ -41,11 +42,11 @@ const Landing = (props) => {
       <div className='landing-screen'>
       <div className="carousel">
         <Slider {...settings} className="slider">
-          {photos.map((photo) => {
+          {photos.map((photo, index) => {
             return (
-              <div className="photo-info">
+              <div className="photo-info" key= {index}>
                 <div>
-                  <img src={photo.url} className='carousel-image'/>
+                  <img src={photo.url} className='carousel-image' alt=''/>
                 </div>
                 <div>
                   <p>{photo.info}</p>
@@ -56,7 +57,11 @@ const Landing = (props) => {
         
         </Slider>
       </div>
-     <div className='btn-div'><a class="btn green" href="#">Shop Now</a></div>
+        <div className='btn-div'>
+          <NavLink to="/products">
+            <button className="btn green">Shop Now</button>
+          </NavLink>
+        </div>
       <div className="marketing">
         <div className="first-marketing">
           Saved my cats from having to find a new home. I tried every brand and
