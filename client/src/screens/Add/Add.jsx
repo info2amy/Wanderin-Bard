@@ -113,7 +113,7 @@ return <Redirect to={`/products`} />;
             required
             onChange={handleChange}
               />           
- <button className="btn">
+ <button className="submit">
             Submit
           </button>
         </form>

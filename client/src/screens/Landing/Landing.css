@@ -35,8 +35,7 @@ align-items: center;
 .marketing > div {
   width: calc(100% / 4);  
   display: inline-block;
-  vertical-align: top;   
- 
+  vertical-align: top;    
   text-align:center;
   margin:1%;    
   padding:20px;
@@ -44,12 +43,7 @@ align-items: center;
   margin-right: auto;
   line-height: 2;
  }
- /* .btn-div{
-   margin-left:43%;
-   margin-top: 9%;
-   padding: 0;
-   
- } */
+
  .btn{
   background:transparent;
   border: 2px solid transparent;

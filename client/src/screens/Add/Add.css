@@ -30,10 +30,10 @@
   transition: border .5s;
   margin-bottom: 10px;
   color: #777;
-
+  outline-color: #438496;
   }
  
-  input:focus {
+  .login-form input:focus {
   border: 2px solid #438496;
   box-shadow: none;
   }
@@ -43,7 +43,7 @@
   }
   
   
-  .btn {
+  .submit {
     border: 2px solid transparent;
     background: #76323F;
     color: #ffffff;
@@ -60,7 +60,7 @@
     margin: 0 auto;
   }
   
-  .btn:hover {
+  .submit:hover {
     background-color: #2980B9;
   }
  

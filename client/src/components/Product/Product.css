@@ -9,7 +9,6 @@
   width: 360px;
   text-decoration: none;
   background-color: #438496;
-  /* border: 1px solid #ffffff; */
   border-radius: 10px;
   margin-bottom: 60px;
 }
@@ -32,12 +31,10 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  /* background-color: rgba(67,132,150,0.71); */
   width: 100%;
   height: 120px;
   margin-top: 20px;
   justify-content: center;
-  /* border: 3px solid #438496; */
   border-radius: 10px;
 }
 .product-name {
