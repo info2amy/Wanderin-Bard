@@ -1,0 +1,36 @@
+{
+  "name": "wanderin-bard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/info2amy/Wanderin-Bard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/info2amy/Wanderin-Bard/issues"
+  },
+  "homepage": "https://github.com/info2amy/Wanderin-Bard#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0",
+    "react-icons": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
