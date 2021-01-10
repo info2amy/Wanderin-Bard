@@ -1,6 +1,8 @@
 nav {
+  display: flex;
   width: 100%;
-  background-color: #438496;
+  background-color: #fae3c7;
+  color: #565656;
 }
 
 .navbar {
@@ -8,8 +10,27 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 300px) {
-  .logo {
-    width: 80%;
-  }
+.logo {
+  width: 175px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 3px #438496 solid;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.link{
+  margin: 0 1em;
+  color: #565656;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+  align-content: center;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  color: #565656;
+  /* background-color: #438496; */
 }
