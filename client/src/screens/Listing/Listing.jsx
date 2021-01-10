@@ -48,9 +48,11 @@ const Listing = (props) => {
 
   const handleSubmit = event => event.preventDefault()
 
-  const productsJSX = queriedProducts.map((product, index) =>
-    <Product _id={product._id} name={product.name} imgURL={product.imgURL} price={product.price} key={index} sale={product.sale}/>
-  )
+  const productsJSX = queriedProducts.map((product, index) => {
+    console.log(product)
+    return < Product _id={product._id} name={product.name} imgURL={product.imgURL} price={product.price} key={index} sale={product.sale} />
+  })
+
 
   return (
     <Layout user={props.user}>

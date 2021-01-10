@@ -29,7 +29,8 @@
 .form-container form input {
   margin: 0.5em auto;
   border-radius: 3px;
-  outline: none;
+  outline-color: #438496;
+  /* outline: none; */
   transition: all 0.4s ease;
   text-align: center;
   background-color: #ecf0f1;
@@ -40,11 +41,6 @@
   width: 350px;
   margin-bottom: 10px;
   color: #777;
-}
-
-.form-container form input:focus{
-  border: 2px solid #438496;
-  box-shadow: none;
 }
 
 .form-container form button {
