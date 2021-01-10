@@ -6,12 +6,14 @@ import { getProduct, updateProduct } from '../../services/products'
 
 const Edit = (props) => {
 
-    const [product, setProduct] = useState({
-            name: '',
-            description: '',
-            imgURL: '',
-            price: ''
-    })
+  const [product, setProduct] = useState({
+    name: "",
+    images: [],
+    description: "",
+    price: "",
+    category: "",
+    origin: "",
+  });
 
     const [isUpdated, setUpdated] = useState(false)
     let { id } = useParams()
@@ -23,15 +25,7 @@ const Edit = (props) => {
         }
         fetchProduct()
     }, [id])
-
-
-    const handleChange = (event) => {
-      const { name, value } = event.target
-        setProduct({
-                ...product,
-                [name]: value
-        })
-    }
+  
   const handleSale = (event) => {
     setProduct({
       ...product,
@@ -39,39 +33,52 @@ const Edit = (props) => {
     })
   }
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        const updated = await updateProduct(id, product)
-        setUpdated(updated)
-    }
+  if (isUpdated) {
+      return <Redirect to={`/products/${id}`} />
+  }
 
-    if (isUpdated) {
-        return <Redirect to={`/products/${id}`} />
-    }
-    const addimage = (event) => {
-      const { name, value } = event.target;
-      setProduct({
-        ...product,
-        [name]: [...product.imageAddresses, value],
-      });
-    };
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setProduct({
+      ...product,
+      [name]: value
+    })
+  }
+  
+  const addimage = (event) => {
+    const { name, value } = event.target;
+    setProduct({
+      ...product,
+      [name]: [...product.images, value],
+    });
+  };
+  
+  const handleSubmit = async (event) => {
+      event.preventDefault()
+      const updated = await updateProduct(id, product)
+      setUpdated(updated)
+  }
 
-    return (
+  return (
         <Layout user={props.user}>
-            <div className="product-edit">
-                <div className="image-container">
-                    <img className="edit-product-image" src={product.imgURL} alt={product.name} />
+        <div className="product-edit">
+          <div className="images-container">
+            {product.images.map((image, index) => 
+          <div className="image-container">
+                    <img className="edit-product-image" src={image} alt={product.name} />
                     <form onSubmit={handleSubmit}>
                         <input
                             className="edit-input-image-link"
                             placeholder='Image Link'
-                            value={product.imageAddresses}
-                            name="imageAddresses"
+                            value={product.images}
+                            name="images"
                             required
                             onChange={addimage}
-                        />
+                            />
                     </form>
                 </div>
+                            )}
+          </div>
                 <form className="edit-form" onSubmit={handleSubmit}>
                     <input
                         className="input-name"
@@ -81,7 +88,17 @@ const Edit = (props) => {
                         required
                         autoFocus
                         onChange={handleChange}
-                    />
+                     />
+                      <input
+                        placeholder="add image url"
+                        type="text"
+                        value={product.images}
+                        name="images"
+                        className="input-image"
+                        id="login-pass"
+                        required
+                        onChange={handleChange}
+                        />
                     <input
                         className="input-price"
                         placeholder='Price'
