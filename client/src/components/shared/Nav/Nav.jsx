@@ -4,7 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
 import "./Nav.css";
 import logo from "../../../logo/W.Bard-image.png";
-// import logo from "../../../logo/W.Bard-image-square.png";
+
 
 const authenticatedOptions = (
   <>
