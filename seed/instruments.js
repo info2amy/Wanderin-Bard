@@ -17,7 +17,7 @@ const main = async () => {
         },
         {
           "name": "Hurdy Gurdy",
-          "images": ["https://i.imgur.com/xFscsy3.jpg","https://i.imgur.com/uKTdcSY.jpg","https://i.imgur.com/qhRo94Q.jpg","https://i.imgur.com/eqvaOjb.png"],
+          "images": ["https://i.imgur.com/ztjYeEJ.png","https://i.imgur.com/O5zQvlH.png","https://i.imgur.com/mTXzC1K.png","https://i.imgur.com/K9vKyZe.png"],
           "description": "The hurdy-gurdy is a stringed instrument that produces sound by a hand-crank-turned, rosined wheel rubbing against the strings. The wheel functions much like a violin bow, and single notes played on the instrument sound similar to those of a violin.",
         "price": "1,300",
         "category": "string",
