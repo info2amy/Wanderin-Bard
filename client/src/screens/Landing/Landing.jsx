@@ -16,7 +16,7 @@ const photos = [
   },
   {
     info:
-      "We use national fulfillment centers to ship your order. We have partnered with national fulfillment centers for all order fulfillment and have our products strategically placed in warehouses across the United States.",
+      "We use national fulfillment centers to ship your order.",
     url:
       "http://www.simpleimageresizer.com/_uploads/photos/620b9642/travel_800x400.jpg",
   },
@@ -34,7 +34,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   autoplay: true,
-  arrows: true,
+  arrows: false,
   slidesToScroll: 1,
   className: "slides",
 };
@@ -49,7 +49,7 @@ const Landing = (props) => {
               return (
                 <div className="photo-info">
                   <div>
-                    <img src={photo.url} className="carousel-image" />
+                    <img src={photos[0].url} className="carousel-image" />
                   </div>
                   <div>
                     <p>{photo.info}</p>
@@ -68,21 +68,17 @@ const Landing = (props) => {
           <div className="first-marketing">
             Saved my cats from having to find a new home. I tried every brand
             and home remedy I could find, nothing deterred my little beasties
-            from doing their best to ruin my carpet. Then I stumbled upon
-            Amaziing Solutions.
+            from doing their best to ruin my carpet.
           </div>
           <div className="second-marketing">
             BEST PET ODOR AND STAIN REMOVER I have found - and I have bought and
             used MANY! This by far works the best at removing odor and getting
-            rid of stains. It also helps to reduce repeat offenses by the
-            animals. I would HIGHLY recommend this product to anyone who wants
-            to eliminate pet odors and stains!!!!
+            rid of stains. 
           </div>
           <div className="third-marketing">
             My next door neighbor got a new puppy, brought it over to visit our
             yorkie, and it peed on my white dining room rug! Ever since then I
-            caught my yorkie going to the same spot and marking her territory,
-            and she kept going back.
+            caught my yorkie going to the same spot.
           </div>
         </div>
       </div>
