@@ -37,9 +37,6 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="navbar">
-        {/* <NavLink className="ProductsAppHome" to="/">
-          ProductsApp
-        </NavLink> */}
         <NavLink className="to-home" to="/">
           <img className="logo" src={logo} alt="our logo" />
         </NavLink>
