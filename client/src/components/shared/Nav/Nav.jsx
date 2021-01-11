@@ -33,6 +33,14 @@ const alwaysOptions = (
   </>
 );
 
+const aboutUs = (
+  <>
+    <NavLink className="link" to="/aboutus">
+      About Us
+    </NavLink>
+  </>
+);
+
 const Nav = ({ user }) => {
   return (
     <nav>
@@ -44,10 +52,14 @@ const Nav = ({ user }) => {
           {user && <div className="link welcome">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
+          {aboutUs}
         </div>
       </div>
     </nav>
   );
 };
+
+
+
 
 export default Nav;
