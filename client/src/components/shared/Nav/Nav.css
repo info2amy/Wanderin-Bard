@@ -60,9 +60,6 @@ nav {
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  nav {
-    width: 98%;
-  }
   .logo {
     max-width: 50%;
   }
