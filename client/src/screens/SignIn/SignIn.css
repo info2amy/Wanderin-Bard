@@ -1,6 +1,3 @@
-
-
-
 .form-container {
   align-self: center;
   padding: 1em;
@@ -12,8 +9,8 @@
   box-shadow: 2px 4px 10px #0097a7;
   transition: all 2s ease;
   text-align: center;
+  max-width: 600px;
 }
-
 
 .form-container form {
   display: flex;
@@ -51,12 +48,9 @@
   box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-
 .danger {
   background: #e57373;
 }
-
-
 
 #signin-button {
   border: 2px solid transparent;
@@ -89,13 +83,13 @@
     width: 900px;
   }
   #signup-login0,
-#signup-login1,
-#signup-login2,
-#signup-login3 {
-  margin: 20px;
-  width: 90%;
-}
-#signup-button {
-  width: 90%;
-}
+  #signup-login1,
+  #signup-login2,
+  #signup-login3 {
+    margin: 20px;
+    width: 90%;
+  }
+  #signup-button {
+    width: 90%;
+  }
 }
