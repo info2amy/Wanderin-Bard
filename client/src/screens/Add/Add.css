@@ -3,14 +3,16 @@
   width: 80%;
 }
 .login-screen {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
-  border-radius: 5px;
+  border: 2px solid #b0bec5;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px #0097a7;
 }
 
 .app-title {
   text-align: center;
-  color: #777;
+  color: #black;
 }
 
 .login-form {
@@ -23,20 +25,15 @@
   background-color: #ecf0f1;
   border: 2px solid black;
   border-radius: 3px;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   font-weight: 200;
   padding: 10px 0;
   width: 100%;
   transition: border 0.5s;
   margin-bottom: 10px;
-  /* margin: 40px; */
   color: #777;
   outline-color: #438496;
-}
-
-.login-form input:focus {
-  border: 2px solid #438496;
-  box-shadow: none;
 }
 
 textarea:focus {
