@@ -3,11 +3,17 @@
   width: 80%;
 }
 .login-screen {
-  background-color: #ffffff;
+  align-self: center;
+  padding: 1em;
+  width: 80%;
+  height: 80%;
+  margin: 4em auto;
+  background-color: #fbf3e8;
   padding: 20px;
   border: 2px solid #b0bec5;
   border-radius: 6px;
   box-shadow: 2px 4px 10px #0097a7;
+  max-width: 600px;
 }
 
 .app-title {
