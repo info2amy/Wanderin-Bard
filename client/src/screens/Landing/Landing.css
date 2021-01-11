@@ -79,7 +79,7 @@
   }
   .landing-photo-info {
     margin: 10px 10px 10px 50px;
-    font-size: 150%;
+    font-size: 200%;
   }
   .btn-div {
     margin-top: 100px;
@@ -87,9 +87,9 @@
   
   
   @media (max-width: 500px) {
-    .photo-info{
+    /* .photo-info{
       text-align: center;
-    }
+    } */
    .btn-div{
      margin-top:130px;
      
@@ -118,12 +118,8 @@
     width:90vw;
     margin-top: 10px;
   }
+  .landing-photo-info {
+    margin: 10px 10px 10px 20px; 
+    font-size: 150%; 
   }
-  @media (min-width: 1100px) {
-    /* .carousel-image{
-      width: 80%;
-      /* margin-top: 30px; */
-    /* }  */
   }
-  
-  
