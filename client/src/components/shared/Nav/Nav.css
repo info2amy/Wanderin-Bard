@@ -53,6 +53,7 @@ nav {
   max-width: 60vw;
   align-items: center;
   font-size: 18px;
+  justify-content: space-around;
 }
 
 .welcome {
