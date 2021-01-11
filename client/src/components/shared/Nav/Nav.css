@@ -59,11 +59,10 @@ nav {
 .welcome {
   color: #76323f;
   font-weight: bold;
+  pointer-events: none;
 }
+
 @media (max-width: 500px) {
-  /* nav {
-    width: 98%;
-  } */
   .logo {
     max-width: 50%;
   }

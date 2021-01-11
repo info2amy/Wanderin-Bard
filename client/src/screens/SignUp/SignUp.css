@@ -58,13 +58,13 @@
     width: 900px;
   }
   #signup-login0,
-#signup-login1,
-#signup-login2,
-#signup-login3 {
-  margin: 20px;
-  width: 90%;
-}
-#signup-button {
-  width: 90%;
-}
+  #signup-login1,
+  #signup-login2,
+  #signup-login3 {
+    margin: 20px;
+    width: 90%;
+  }
+  #signup-button {
+    width: 90%;
+  }
 }
