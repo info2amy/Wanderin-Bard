@@ -59,7 +59,7 @@ const main = async () => {
         // Percussion
         {
           "name": "Frog Guiro",
-          "images": ["https://images-na.ssl-images-amazon.com/images/I/81luwP1fxAL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/81C91hWk9qL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/81rjhMmOAkL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/81rjRvjEUYL._AC_SL1500_.jpg"],
+          "images": ["https://i.imgur.com/0pMHlC7.png","https://i.imgur.com/3RBpcaH.png","https://i.imgur.com/DjXGHzY.png","https://i.imgur.com/G4kd5hj.png"],
           "description": "The güiro is a Latin American percussion instrument consisting of an open-ended, hollow gourd with parallel notches cut in one side. It is played by rubbing a stick or tines along the notches to produce a ratchet sound. They come in many shapes and sizes such as rectangular or frog-shaped or crocodile-shaped.",
         "price": "20",
         "category": "percussion",
