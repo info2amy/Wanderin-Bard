@@ -44,7 +44,7 @@ const Add = (props) => {
       <div className="login">
         <div className="login-screen">
           <div className="app-title">
-            <h1>Register A New Product</h1>
+            <h1>Register a New Product</h1>
           </div>
           <form onSubmit={handleSubmit} className="login-form">
             <input
