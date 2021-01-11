@@ -5,14 +5,13 @@ nav {
   left: 0;
   width: 100%;
   background-color: #fae3c7;
-  color: #565656;
-  z-index:1; /*Add this*/
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  color: #565656;
 }
 
 .logo {
@@ -21,23 +20,30 @@ nav {
   margin: auto;
   text-align: center;
   border: 3px #438496 solid;
-  margin: 10px;
+  margin: 15px;
+  margin-left: 30px;
   border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .link {
   margin: 0 1em;
   color: #565656;
   text-decoration: none;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   transition: all 0.4s ease;
   align-content: center;
+  justify-content: space-between;
 }
 
 .link:hover {
-  transform: scale(1.05);
-  color: #565656;
-  /* background-color: #438496; */
+  transform: scale(1.1);
+  color: #438496;
+  font-weight: bold;
 }
 
 .links {
@@ -49,6 +55,10 @@ nav {
   font-size: 18px;
 }
 
+.welcome {
+  color: #76323f;
+  font-weight: bold;
+}
 @media (max-width: 500px) {
   nav {
     width: 98%;

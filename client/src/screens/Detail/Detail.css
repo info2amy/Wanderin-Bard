@@ -72,6 +72,9 @@
   justify-content: space-evenly;
   width: 100%;
 }
+.button-container a{
+  text-decoration: none;
+}
 
 .detail-extra-photo-container {
   display: flex;
@@ -81,7 +84,7 @@
   margin-bottom: 10px;
 }
 
-.edit-button,
+.edit-link,
 .delete-button {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -96,10 +99,13 @@
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .edit-link {
-  color: white;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 @media (max-width: 300px) {
