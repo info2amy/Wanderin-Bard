@@ -50,7 +50,7 @@ const Listing = (props) => {
 
   const productsJSX = queriedProducts.map((product, index) => {
     console.log(product)
-    return < Product _id={product._id} name={product.name} imgURL={product.imgURL} price={product.price} key={index} sale={product.sale} />
+    return < Product _id={product._id} name={product.name} images={product.images} price={product.price} key={index} sale={product.sale} />
   })
 
 
