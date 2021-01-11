@@ -10,21 +10,27 @@ import { NavLink } from "react-router-dom";
 const photos = [
   {
     info:
-      "Everyone that uses our products, come back for more. We must be doing something right!",
+      "Percussions",
     url:
-      "https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      'https://i.imgur.com/rjqDKv6.png'
   },
   {
     info:
-      "We use national fulfillment centers to ship your order.",
+      "Strings...",
     url:
-      "http://www.simpleimageresizer.com/_uploads/photos/620b9642/travel_800x400.jpg",
+      'https://i.imgur.com/8bPn02K.png'
   },
   {
     info:
-      "Brand new fresh products, we make fresh batches every week, so your product has not been sitting on a shelf for long by the time you receive it",
+    "Electronics.....",
     url:
-      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+     'https://i.imgur.com/ODBPZ2R.png'
+  },
+  {
+    info:
+    "Wind.....",
+    url:
+     'https://i.imgur.com/2dAoWi8.png'
   },
 ];
 const settings = {
@@ -49,7 +55,7 @@ const Landing = (props) => {
               return (
                 <div className="photo-info">
                   <div>
-                    <img src={photos[0].url} className="carousel-image" />
+                    <img src={photo.url} className="carousel-image" />
                   </div>
                   <div>
                     <p className="landing-photo-info">{photo.info}</p>
