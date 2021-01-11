@@ -45,6 +45,11 @@
     margin-right: auto;
     line-height: 2;
     background-color: #B37D4E;
+    color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+   }
+   .marketing > div em{
+     font-size: 24px;
    }
    .btn{
     background:transparent;
@@ -72,7 +77,8 @@
   .green{
     background:#76323F;
     color:#fff;    
-    box-shadow: 0 3px 0 #76323F;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    border-radius: 5px;
   }
   .green:hover{
     background:#76323F;
