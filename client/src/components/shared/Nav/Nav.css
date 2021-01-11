@@ -28,6 +28,11 @@ nav {
   transition: all 0.4s ease;
   align-content: center;
 }
+@media (max-width: 300px) {
+  .logo {
+    width: 80%;
+  }
+}
 
 .link:hover {
   transform: scale(1.05);

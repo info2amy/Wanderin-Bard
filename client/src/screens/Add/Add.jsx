@@ -27,13 +27,6 @@ const Add = (props) => {
       [name]: value,
     });
   };
-  const addimage = (event) => {
-    const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: [...product.images, value],
-    });
-  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();

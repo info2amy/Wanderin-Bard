@@ -7,7 +7,7 @@ import { useParams, Link, useHistory } from "react-router-dom";
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const [images, setimages] = useState([]);
+  const [images, setImages] = useState([]);
   const [mainPicImage, setMainPicImage] = useState();
   const { id } = useParams();
   const history = useHistory();
@@ -17,7 +17,7 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      setimages(product.images);
+      setImages(product.images);
       setMainPicImage(product.images[0]);
     };
     fetchProduct();
@@ -34,6 +34,7 @@ const Detail = (props) => {
     <Layout user={props.user}>
       <div className="detail-parent-div">
         <div className="detail-leftside">
+  
           <img
             className="detail-image"
             src={mainPicImage}

@@ -14,7 +14,7 @@ const Edit = (props) => {
     category: "",
     origin: "",
   });
-
+  const [newImage, setNewImage]=useState('')
     const [isUpdated, setUpdated] = useState(false)
     let { id } = useParams()
 
@@ -36,28 +36,45 @@ const Edit = (props) => {
   if (isUpdated) {
       return <Redirect to={`/products/${id}`} />
   }
+  
+  let images = product.images
+  const editImage = (event) => {
+    const imageIndex = event.target.attributes['data-index'].value
+    if (imageIndex) {
+      images[imageIndex] = event.target.value
+      setProduct({
+        ...product,
+        images: images
+      })
+    }
+  }
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    setProduct({
-      ...product,
-      [name]: value
-    })
+    if (name === 'images') {
+        setNewImage(event.target.value)  
+    } else {
+      setProduct({
+        ...product,
+        [name]: value
+      })
+    }
   }
-  
-  const addimage = (event) => {
-    const { name, value } = event.target;
+    
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    if (newImage) {
+      images.push(newImage)
+    }
     setProduct({
       ...product,
-      [name]: [...product.images, value],
-    });
-  };
-  
-  const handleSubmit = async (event) => {
-      event.preventDefault()
+      images: images
+    })    
       const updated = await updateProduct(id, product)
       setUpdated(updated)
   }
+  let lastItem = product.images.length - 1
+  console.log(lastItem);
 
   return (
         <Layout user={props.user}>
@@ -70,10 +87,12 @@ const Edit = (props) => {
                         <input
                             className="edit-input-image-link"
                             placeholder='Image Link'
-                            value={product.images}
+                            value={image}
                             name="images"
                             required
-                            onChange={addimage}
+                            onChange={editImage}
+                            key={index}
+                            data-index={index}
                             />
                     </form>
                 </div>
@@ -90,13 +109,12 @@ const Edit = (props) => {
                         onChange={handleChange}
                      />
                       <input
-                        placeholder="add image url"
+                        placeholder="add a new image"
                         type="text"
-                        value={product.images}
+                        value={newImage}
                         name="images"
                         className="input-image"
                         id="login-pass"
-                        required
                         onChange={handleChange}
                         />
                     <input

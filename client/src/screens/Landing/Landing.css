@@ -75,5 +75,37 @@ align-items: center;
   background:#76323F;
 }
 
-
+@media (max-width: 500px) {
+  .photo-info{
+    text-align: center;
+  }
+ .btn-div{
+   margin-top:130px;
+   
+ }
+ .marketing > div {
+   font-size: 8px;
+   padding: 8px;
+   line-height:1.9;
+   width:calc(100% / 2.5);
+   text-align: justify;
+   text-justify:inter-character;
+ }
+ .marketing{
+  margin-left:12px;
+  margin-right:12px;
+ }
+.landing-screen{
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel{
+  height:180px;
+  width:100vw;
+}
+.carousel-image{
+  height:180px;
+  width:100vw;
+}
+}
 
