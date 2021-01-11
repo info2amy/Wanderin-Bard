@@ -25,13 +25,14 @@
     flex-direction: column;
   }
   .layout-children {
-    /* width: 80vw; */
     width: 100%;  /*Gylych*/
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
   }
 }
 

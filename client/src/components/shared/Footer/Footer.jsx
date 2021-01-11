@@ -19,7 +19,9 @@ const Footer = () => {
       <a href="https://pinterest.com/" target="_blank" rel="noreferrer">
         <GrPinterest size="1.6em" color="black" />
       </a>
-      <GrMailOption size="1.7em" color="black" />
+      <a href="mailto:someone@yoursite.com" target="_blank" rel="noreferrer">
+        <GrMailOption size="1.7em" color="black" />
+      </a>
     </footer>
   );
 };
