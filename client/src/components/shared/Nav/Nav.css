@@ -25,14 +25,18 @@ nav {
 }
 
 .link {
-  text-decoration: none;
-  align-content: center;
+  margin: 0 1em;
   color: #565656;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+  align-content: center;
 }
 
 .link:hover {
   transform: scale(1.05);
-  color: #438496;
+  color: #565656;
+  /* background-color: #438496; */
 }
 
 .links {

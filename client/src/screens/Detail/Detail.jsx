@@ -17,10 +17,8 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      const imageAddressUpdated = [...imageAddresses, product.imgURL, product.img2URL, product.img3URL, product.img4URL];
-      console.log(product)
-      setImageAddresses(imageAddressUpdated);
-      setMainPicImageAddress(product.imgURL);
+      setImageAddresses(product.imageAddresses);
+      setMainPicImageAddress(product.imageAddresses[0]);
     };
     fetchProduct();
   }, [id]);
@@ -32,11 +30,11 @@ const Detail = (props) => {
     deleteProduct(product._id);
     history.push("/products");
   };
-
   return (
     <Layout user={props.user}>
       <div className="detail-parent-div">
         <div className="detail-leftside">
+  
           <img
             className="detail-image"
             src={mainPicImageAddress}
@@ -44,15 +42,16 @@ const Detail = (props) => {
           />
           <em id="additional-pictures-text">Additional Pictures: </em>
           <div className="detail-extra-photo-container">
-            {imageAddresses.map((item) => {
+            {imageAddresses.map((item, index) => {
               return (
                 <img
                   className="detail-extra-photo-div"
                   src={item}
                   alt={product.name}
+                  key={index}
                   onClick={(e) => {
                     e.preventDefault();
-                    setMainPicImageAddress(item);
+                    setMainPicImageAddress(item)
                   }}
                 />
               );
@@ -60,9 +59,11 @@ const Detail = (props) => {
           </div>
         </div>
         <div className="detail">
-          <div className = "detail-text">
-          <div className="name">{product.name}</div>
-          <div className="price"><h2>{`$${product.price}`}</h2></div>
+          <div className="detail-text">
+            <div className="name">{product.name}</div>
+            <div className="price">
+              <h2>{`$${product.price}`}</h2>
+            </div>
             <div className="description">{product.description}</div>
           </div>
           <div className="button-container">
