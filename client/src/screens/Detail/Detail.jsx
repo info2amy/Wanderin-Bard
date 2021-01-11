@@ -67,11 +67,11 @@ const Detail = (props) => {
             <div className="description">{product.description}</div>
           </div>
           <div className="button-container">
-            <button className="edit-button">
               <Link className="edit-link" to={`/products/${product._id}/edit`}>
+            <div className="edit-button">
                 Edit
+            </div>
               </Link>
-            </button>
             <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>
