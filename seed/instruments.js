@@ -25,7 +25,7 @@ const main = async () => {
         },
         {
           "name": "Igil",
-          "images": ["https://i.imgur.com/vFeVgv4.jpg","https://i.imgur.com/jaSyFnb.jpg","https://i.imgur.com/GEvitSP.jpg","https://i.imgur.com/PKTPZum.jpg"],
+          "images": ["https://i.imgur.com/loEMImQ.png","https://i.imgur.com/y7U8PwL.png","https://i.imgur.com/5zhrefN.png","https://i.imgur.com/J1RPAnL.png"],
           "description": "An igil is a two-stringed Tuvan musical instrument, played by bowing the strings. The neck and lute-shaped sound box are usually made of a solid piece of pine or larch. The top of the sound box may be covered with skin or a thin wooden plate.",
         "price": "600",
         "category": "string",
@@ -34,7 +34,7 @@ const main = async () => {
         // Wind
         {
           "name": "Native American Drone Flute",
-          "images": ["https://i.imgur.com/YrGIkGi.jpg","https://i.imgur.com/fBCQ1hM.jpg","https://i.imgur.com/7567kkP.jpg","https://i.imgur.com/Gw8ybTS.png"],
+          "images": ["https://i.imgur.com/Pden64G.png","https://i.imgur.com/oIa1v29.png","https://i.imgur.com/tbeRSb6.png","https://i.imgur.com/m3bmDzX.png"],
           "description": "Native American Style Drone Flutes are dual chambered flutes, playing a drone through the left chamber, and melodic playing on the right. We call this a hybrid Native American Indian Style Flute. This style of flute originates from the Mayan and Teotihuacan cultures, where it was commonly crafted from clay and played by villagers and priests. It has been adapted into a wooden flute that combines the traditional Mayan dual chambered clay flute, with the totem and slow air chamber from the modern Native American Style Flute.",
         "price": "250",
         "category": "wind",
