@@ -79,26 +79,8 @@ const Edit = (props) => {
   return (
         <Layout user={props.user}>
         <div className="product-edit">
-          <div className="images-container">
-            {product.images.map((image, index) => 
-          <div className="image-container">
-                    <img className="edit-product-image" src={image} alt={product.name} />
-                    <form onSubmit={handleSubmit}>
-                        <input
-                            className="edit-input-image-link"
-                            placeholder='Image Link'
-                            value={image}
-                            name="images"
-                            required
-                            onChange={editImage}
-                            key={index}
-                            data-index={index}
-                            />
-                    </form>
-                </div>
-                            )}
-          </div>
-                <form className="edit-form" onSubmit={handleSubmit}>
+        <form className="edit-form" onSubmit={handleSubmit}>
+          <label htmlFor='name'>Name</label>
                     <input
                         className="input-name"
                         placeholder='Name'
@@ -107,7 +89,8 @@ const Edit = (props) => {
                         required
                         autoFocus
                         onChange={handleChange}
-                     />
+          />
+           <label htmlFor='images'>Image Url</label>
                       <input
                         placeholder="add a new image"
                         type="text"
@@ -116,7 +99,8 @@ const Edit = (props) => {
                         className="input-image"
                         id="login-pass"
                         onChange={handleChange}
-                        />
+          />
+           <label htmlFor='price'>Price</label>
                     <input
                         className="input-price"
                         placeholder='Price'
@@ -124,11 +108,11 @@ const Edit = (props) => {
                         name='price'
                         required
                         onChange={handleChange}
-                    />
+          />
+           <label htmlFor='description'>Description</label>
                     <textarea
                         className="textarea-description"
-                        rows={10}
-                        cols={78}
+                        rows={7}
                         placeholder='Description'
                         value={product.description}
                         name='description'
@@ -143,7 +127,27 @@ const Edit = (props) => {
                 checked={product.sale}
               onChange={handleSale}
             />
-            </div>
+          </div>
+           <label htmlFor="images-container"> Edit Images</label>
+          <div className="images-container">
+            {product.images.map((image, index) => 
+          <div className="image-container">
+                    <img className="edit-product-image" src={image} alt={product.name} />
+                    {/* <form onSubmit={handleSubmit}> */}
+                        <input
+                            id="image-link"
+                            placeholder='Image Link'
+                            value={image}
+                            name="images"
+                            required
+                            onChange={editImage}
+                            key={index}
+                            data-index={index}
+                            />
+                    {/* </form> */}
+                </div>
+                            )}
+          </div>
                     
                     <button type='submit' className="save-button">Save</button>
                 </form>
