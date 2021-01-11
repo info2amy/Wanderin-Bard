@@ -10,12 +10,13 @@ const Add = (props) => {
 
   const [product, setProduct] = useState({
     name: "",
-    imageAddresses: "",
+    images: "",
     description: "",
     price: "",
     category: "",
     origin: "",
   });
+  
 
   const [isCreated, setCreated] = useState(false);
 
@@ -26,17 +27,14 @@ const Add = (props) => {
       [name]: value,
     });
   };
-  const addimage = (event) => {
-    const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: [...product.imageAddresses, value],
-    });
-  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const created = await createProduct(product);
+    const submitProduct = {
+      ...product,
+      images: [product.images]
+    }
+    const created = await createProduct(submitProduct);
     setCreated({ created });
   };
 
@@ -63,14 +61,14 @@ return <Redirect to={`/products`} />;
               onChange={handleChange}
             />
             <input
-              placeholder="imageUrl"
+              placeholder="image url"
               type="text"
-              value={product.imageAddresses}
-              name="imageAddresses"
+              value={product.images}
+              name="images"
               className="login-field"
               id="login-pass"
               required
-              onChange={addimage}
+              onChange={handleChange}
             />
           <textarea
             placeholder="Description"
