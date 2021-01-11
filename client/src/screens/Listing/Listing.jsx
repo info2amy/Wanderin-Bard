@@ -59,9 +59,9 @@ const Listing = (props) => {
       <Search onSubmit={handleSubmit} 
       onChange={handleSearch} 
       />
-      {/* <Sort onSubmit={handleSubmit}
+      <Sort onSubmit={handleSubmit}
       onChange={handleSort}
-      /> */}
+      />
       <div className="products">
         {productsJSX}
       </div>
