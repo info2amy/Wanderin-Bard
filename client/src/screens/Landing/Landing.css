@@ -78,7 +78,8 @@
     background:#76323F;
   }
   .landing-photo-info {
-    margin: 10px;
+    margin: 10px 10px 10px 50px;
+    font-size: 150%;
   }
   .btn-div {
     margin-top: 100px;
