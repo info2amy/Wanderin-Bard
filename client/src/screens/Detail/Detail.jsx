@@ -7,8 +7,8 @@ import { useParams, Link, useHistory } from "react-router-dom";
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const [imageAddresses, setImageAddresses] = useState([]);
-  const [mainPicImageAddress, setMainPicImageAddress] = useState();
+  const [images, setImages] = useState([]);
+  const [mainPicImage, setMainPicImage] = useState();
   const { id } = useParams();
   const history = useHistory();
 
@@ -17,8 +17,8 @@ const Detail = (props) => {
       const product = await getProduct(id);
       setProduct(product);
       setLoaded(true);
-      setImageAddresses(product.imageAddresses);
-      setMainPicImageAddress(product.imageAddresses[0]);
+      setImages(product.images);
+      setMainPicImage(product.images[0]);
     };
     fetchProduct();
   }, [id]);
@@ -37,12 +37,12 @@ const Detail = (props) => {
   
           <img
             className="detail-image"
-            src={mainPicImageAddress}
+            src={mainPicImage}
             alt={product.name}
           />
           <em id="additional-pictures-text">Additional Pictures: </em>
           <div className="detail-extra-photo-container">
-            {imageAddresses.map((item, index) => {
+            {images.map((item, index) => {
               return (
                 <img
                   className="detail-extra-photo-div"
@@ -51,7 +51,7 @@ const Detail = (props) => {
                   key={index}
                   onClick={(e) => {
                     e.preventDefault();
-                    setMainPicImageAddress(item)
+                    setMainPicImage(item)
                   }}
                 />
               );
@@ -67,11 +67,11 @@ const Detail = (props) => {
             <div className="description">{product.description}</div>
           </div>
           <div className="button-container">
-            <button className="edit-button">
               <Link className="edit-link" to={`/products/${product._id}/edit`}>
+            <div className="edit-button">
                 Edit
+            </div>
               </Link>
-            </button>
             <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>
