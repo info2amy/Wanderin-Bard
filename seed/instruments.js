@@ -9,7 +9,7 @@ const main = async () => {
         // STRING
         {
           "name": "Sarangi",
-          "images": ["https://2.bp.blogspot.com/-_lgP4zMbsEY/Uf1ge4FiYlI/AAAAAAAAAEQ/hWrZmyb_pQc/s1600/Sarangi.jpg", "https://canary.contestimg.wish.com/api/webimage/59f34e66977da143a2b6ab76-3-large.jpg", "https://images.reverb.com/image/upload/s--JHR_M82D--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530594/fkah9h3xxjsoexrpp2j7.jpg", "https://images.reverb.com/image/upload/s--piJ5wn3p--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1487530596/i3jrgqupxnfch9wrvqcu.jpg"],
+          "images": ["https://i.imgur.com/Mf3fmzj.png", "https://i.imgur.com/Fnkx3pz.png", "https://i.imgur.com/h4H7SYD.png", "https://i.imgur.com/QokBn3F.png"],
           "description": "A sarangi is a bowed stringed instrument with a skin-covered resonator. The typical sarangi is made by hand, usually from a single block of wood. The four playing strings on this instrument are made of goat gut, and the seventeen sympathetic strings are made of steel.",
         "price": "600",
         "category": "string",
