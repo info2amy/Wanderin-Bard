@@ -4,4 +4,7 @@ footer {
   justify-content: space-around;
   background-color: #fae3c7;
   padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
