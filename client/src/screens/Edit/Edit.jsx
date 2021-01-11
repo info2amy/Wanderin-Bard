@@ -38,6 +38,7 @@ const Edit = (props) => {
   }
   
   let images = product.images
+  
   const editImage = (event) => {
     const imageIndex = event.target.attributes['data-index'].value
     if (imageIndex) {
