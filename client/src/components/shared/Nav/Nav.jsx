@@ -28,7 +28,7 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/products">
-      See Products
+      See All Products
     </NavLink>
   </>
 );

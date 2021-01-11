@@ -1,5 +1,8 @@
 nav {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #fae3c7;
   color: #565656;
@@ -8,6 +11,7 @@ nav {
 .navbar {
   display: flex;
   width: 100%;
+  color: #565656;
 }
 
 .logo {
@@ -20,13 +24,41 @@ nav {
   border-radius: 50%;
 }
 
-/* .link {
+.link {
   text-decoration: none;
   align-content: center;
   color: #565656;
-} */
+}
 
 .link:hover {
   transform: scale(1.05);
   color: #438496;
+}
+
+.links {
+  display: flex;
+  flex: 2;
+  color: #565656;
+  max-width: 60vw;
+  align-items: center;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  nav {
+    width: 98%;
+  }
+  .logo {
+    max-width: 50%;
+  }
+  .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50vw;
+  }
+  .link {
+    padding: 3px;
+  }
 }
