@@ -42,15 +42,16 @@ const Detail = (props) => {
           />
           <em id="additional-pictures-text">Additional Pictures: </em>
           <div className="detail-extra-photo-container">
-            {imageAddresses.map((item) => {
+            {imageAddresses.map((item, index) => {
               return (
                 <img
                   className="detail-extra-photo-div"
                   src={item}
                   alt={product.name}
+                  key={index}
                   onClick={(e) => {
                     e.preventDefault();
-                    setMainPicImageAddress(item);
+                    setMainPicImageAddress(item)
                   }}
                 />
               );

@@ -20,11 +20,6 @@ nav {
   border-radius: 50%;
 }
 
-.link:hover {
-  transform: scale(1.05);
-  color: #565656;
-  /* background-color: #438496; */
-}
 .link{
   margin: 0 1em;
   color: #565656;
@@ -37,4 +32,10 @@ nav {
   .logo {
     width: 80%;
   }
+}
+
+.link:hover {
+  transform: scale(1.05);
+  color: #565656;
+  /* background-color: #438496; */
 }
