@@ -12,18 +12,21 @@
 }
 
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
   .layout {
-    height: 100%;
+    /* height: 100%; gykych */
+    width:100%; /*gykych*/
     display: flex;
     flex-direction: column;
   }
   .layout-children {
-    width: 80vw;
+    /* width: 80vw; */
+    width: 100%;  /*Gylych*/
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-} */
+}
+
