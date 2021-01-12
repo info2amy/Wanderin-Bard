@@ -29,7 +29,7 @@
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   margin: 5px;
   object-fit: scale-down;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .name {
@@ -64,7 +64,7 @@
   border: 1px solid #284f59;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   align-self: center;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .button-container {
@@ -72,7 +72,7 @@
   justify-content: space-evenly;
   width: 100%;
 }
-.button-container a{
+.button-container a {
   text-decoration: none;
 }
 
@@ -103,9 +103,9 @@
 }
 
 .edit-link {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 300px) {
@@ -129,7 +129,7 @@ align-items: center;
   }
 }
 
-@media (max-width: 500px) and (min-width: 301px){
+@media (max-width: 500px) and (min-width: 301px) {
   .detail-parent-div {
     display: flex;
     flex-direction: column;
@@ -152,11 +152,10 @@ align-items: center;
     height: 250px;
   }
 }
-@media (max-width: 400px) and (min-width: 301px){
- 
+@media (max-width: 400px) and (min-width: 301px) {
 }
 
-@media (max-width: 800px) and (min-width: 501px){
+@media (max-width: 800px) and (min-width: 501px) {
   .detail-parent-div {
     display: flex;
     flex-direction: column;
@@ -179,10 +178,10 @@ align-items: center;
   .detail-image {
     margin-top: -50px;
   }
- .detail {
-  margin-top: -50px;
-  padding: 0px;
- }
+  .detail {
+    margin-top: -50px;
+    padding: 0px;
+  }
 }
 @media (min-width: 1025px) {
   .detail-image {
