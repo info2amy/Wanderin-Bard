@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const photos = [
   {
     info:
-      "Percussions",
+      "Percussion",
     url:
       'https://i.imgur.com/rjqDKv6.png'
   },
@@ -37,10 +37,10 @@ const settings = {
   dots: true,
   fade: true,
   infinite: true,
-  speed: 500,
+  speed: 400,
   slidesToShow: 1,
   autoplay: true,
-  arrows: false,
+  arrows: true,
   slidesToScroll: 1,
   className: "slides",
 };

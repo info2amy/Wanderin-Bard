@@ -3,11 +3,9 @@ import { createProduct } from "../../services/products.js";
 import { Redirect } from "react-router-dom";
 import { useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
-import './Add.css'
+import "./Add.css";
 
 const Add = (props) => {
- 
-
   const [product, setProduct] = useState({
     name: "",
     images: "",
@@ -16,7 +14,6 @@ const Add = (props) => {
     category: "",
     origin: "",
   });
-  
 
   const [isCreated, setCreated] = useState(false);
 
@@ -32,24 +29,24 @@ const Add = (props) => {
     event.preventDefault();
     const submitProduct = {
       ...product,
-      images: [product.images]
-    }
+      images: [product.images],
+    };
     const created = await createProduct(submitProduct);
     setCreated({ created });
   };
 
   if (isCreated) {
-return <Redirect to={`/products`} />;
+    return <Redirect to={`/products`} />;
   }
   console.log("MyProduct", product);
   return (
     <Layout user={props.user}>
-    <div className="login">
-      <div className="login-screen">
-        <div className="app-title">
-          <h1>Register A New Product</h1>
-        </div>
-        <form onSubmit={handleSubmit} className="login-form">
+      <div className="login">
+        <div className="login-screen">
+          <div className="app-title">
+            <h1>Register a New Product</h1>
+          </div>
+          <form onSubmit={handleSubmit} className="login-form">
             <input
               placeholder="Product Name"
               type="text"
@@ -61,7 +58,7 @@ return <Redirect to={`/products`} />;
               onChange={handleChange}
             />
             <input
-              placeholder="image url"
+              placeholder="Image URL"
               type="text"
               value={product.images}
               name="images"
@@ -70,53 +67,51 @@ return <Redirect to={`/products`} />;
               required
               onChange={handleChange}
             />
-          <textarea
-            placeholder="Description"
+            <textarea
+              placeholder="Description"
               type="text"
               rows={7}
-            value={product.description}
-            name="description"
-            className="login-field"
-            id="login-pass"
-            required
-            onChange={handleChange}
-          />
-          <input
-            placeholder="Price"
-            type="text"
-            value={product.price}
-            name="price"
-            className="login-field"
-            id="login-pass"
-            required
-            onChange={handleChange}
-          />
-          <input
-            placeholder="Category"
-            type="text"
-            value={product.category}
-            name="category"
-            className="login-field"
-            id="login-pass"
-            required
-            onChange={handleChange}
-          />
-          <input
-            placeholder="Origin"
-            type="text"
-            value={product.origin}
-            name="origin"
-            className="login-field"
-            id="login-pass"
-            required
-            onChange={handleChange}
-              />           
- <button className="submit">
-            Submit
-          </button>
-        </form>
+              value={product.description}
+              name="description"
+              className="login-field"
+              id="login-pass"
+              required
+              onChange={handleChange}
+            />
+            <input
+              placeholder="Price"
+              type="text"
+              value={product.price}
+              name="price"
+              className="login-field"
+              id="login-pass"
+              required
+              onChange={handleChange}
+            />
+            <input
+              placeholder="Category"
+              type="text"
+              value={product.category}
+              name="category"
+              className="login-field"
+              id="login-pass"
+              required
+              onChange={handleChange}
+            />
+            <input
+              placeholder="Origin"
+              type="text"
+              value={product.origin}
+              name="origin"
+              className="login-field"
+              id="login-pass"
+              required
+              onChange={handleChange}
+            />
+            <button className="submit">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
     </Layout>
   );
 };
