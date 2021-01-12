@@ -16,10 +16,8 @@ function AboutUs(props) {
             <h2>Amy Kumar</h2>
             <p><em>... on (Data)Base Guitar</em></p>
             <p>
-              Thomas Sten is a software engineer with over 15 years of military
-              experience. His passion for learning combined with his optimistic
-              demeanor has resulted in a richly rewarding experience as a
-              software engineer.
+            Amy is a improvement-oriented designer of solutions, an unraveler and restructerer of puzzles, and a creator of forward-thinking innovations. 
+              She is looking for an opportunity to impact quality, usability and efficiency through design.
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
@@ -76,7 +74,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>David Verghese</h2>
-            <p><em>... on (Object.)keys</em></p>
+            <p><em>... on (Object.)keys()</em></p>
             <p>
               David Verghese is a software developer and musician from City
               Island, New York. He is looking for an entry level position as a
