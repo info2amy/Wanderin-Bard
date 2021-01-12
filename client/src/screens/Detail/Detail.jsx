@@ -34,12 +34,7 @@ const Detail = (props) => {
     <Layout user={props.user}>
       <div className="detail-parent-div">
         <div className="detail-leftside">
-  
-          <img
-            className="detail-image"
-            src={mainPicImage}
-            alt={product.name}
-          />
+          <img className="detail-image" src={mainPicImage} alt={product.name} />
           <em id="additional-pictures-text">Additional Pictures: </em>
           <div className="detail-extra-photo-container">
             {images.map((item, index) => {
@@ -51,7 +46,7 @@ const Detail = (props) => {
                   key={index}
                   onClick={(e) => {
                     e.preventDefault();
-                    setMainPicImage(item)
+                    setMainPicImage(item);
                   }}
                 />
               );
@@ -67,11 +62,9 @@ const Detail = (props) => {
             <div className="description">{product.description}</div>
           </div>
           <div className="button-container">
-              <Link className="edit-link" to={`/products/${product._id}/edit`}>
-            <div className="edit-button">
-                Edit
-            </div>
-              </Link>
+            <Link className="edit-link" to={`/products/${product._id}/edit`}>
+              <div className="edit-button">Edit</div>
+            </Link>
             <button className="delete-button" onClick={handleDelete}>
               Delete
             </button>

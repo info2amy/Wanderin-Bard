@@ -61,6 +61,7 @@ textarea:focus {
   display: block;
   width: 100%;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .submit:hover {
