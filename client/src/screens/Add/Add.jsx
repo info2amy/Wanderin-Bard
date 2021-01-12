@@ -32,13 +32,12 @@ const Add = (props) => {
       images: [product.images],
     };
     const created = await createProduct(submitProduct);
-    setCreated({ created });
+    setCreated( created );
   };
 
   if (isCreated) {
     return <Redirect to={`/products`} />;
   }
-  console.log("MyProduct", product);
   return (
     <Layout user={props.user}>
       <div className="login">

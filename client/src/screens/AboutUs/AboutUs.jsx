@@ -19,7 +19,7 @@ function AboutUs(props) {
               demeanor has resulted in a richly rewarding experience as a
               software engineer.
             </p>
-            <div class="about-us-contact">
+            <div className="about-us-contact">
               <p>Github: </p>
               <a href="https://github.com/info2amy">
                 <img
@@ -45,7 +45,7 @@ function AboutUs(props) {
               demeanor has resulted in a richly rewarding experience as a
               software engineer.
             </p>
-            <div class="about-us-contact">
+            <div className="about-us-contact">
               <p>Github: </p>
               <a href="https://github.com/Jiggorama">
                 <img
@@ -53,13 +53,13 @@ function AboutUs(props) {
                   alt="Github"
                 />
               </a>
-              <div class="about-us-linkedin">
+              <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
                 <a href="https://www.linkedin.com/in/thomas-sten/">
                   <img
-                    class="social"
+                    className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-                  />
+                    alt="LinkedIn"/>
                 </a>
               </div>
             </div>
@@ -79,7 +79,7 @@ function AboutUs(props) {
               junior software developer in a music or media-related tech company
               where he can fully develop his technical and artistic skills.
             </p>
-            <div class="about-us-contact">
+            <div className="about-us-contact">
               <p>Github: </p>
               <a href="https://git.generalassemb.ly/davidverghesegeneralassembly">
                 <img
@@ -87,12 +87,13 @@ function AboutUs(props) {
                   alt="Github"
                 />
               </a>
-              <div class="about-us-linkedin">
+              <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
                 <a href="https://www.linkedin.com/in/david-verghese-a308a011b">
                   <img
-                    class="social"
+                    className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
+                    alt="LinkedIn"
                   />
                 </a>
               </div>
@@ -114,7 +115,7 @@ function AboutUs(props) {
               entry-level opportunity in a dynamic organization where his skills
               will be fully utilized.{" "}
             </p>
-            <div class="about-us-contact">
+            <div className="about-us-contact">
               <p>Github: </p>
               <a href="https://github.com/gylych207">
                 <img
@@ -122,10 +123,10 @@ function AboutUs(props) {
                   alt="Github"
                 />
               </a>
-              <div class="about-us-linkedin">
+              <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
                 <a href="https://www.linkedin.com/in/gylych-mammedov-286898200/">
-                  <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" />
+                  <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" alt="LinkedIn" />
                 </a>
               </div>
             </div>

@@ -6,14 +6,8 @@
   align-items: center;
   padding: 40px 0 40px 0;
   margin: 0 auto;
-  /* background-color: blue; */
 }
 
 .products img {
   width: 100%;
-}
-@media (min-width: 1000px) {
-  .products .product{
-    width: 40%;
-  }
 }

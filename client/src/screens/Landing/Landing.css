@@ -15,7 +15,6 @@
   .carousel{
     margin-top: 50px;
     margin: 0 auto;
-    /* height:400px; */
     width:100%;
     margin: 10px;
   }
@@ -59,7 +58,6 @@
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
-    /* margin: 18px; */
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
@@ -93,9 +91,6 @@
   
   
   @media (max-width: 500px) {
-    /* .photo-info{
-      text-align: center;
-    } */
    .btn-div{
      margin-top:130px;
      

@@ -72,8 +72,6 @@ const Edit = (props) => {
     const updated = await updateProduct(id, product);
     setUpdated(updated);
   };
-  let lastItem = product.images.length - 1;
-  console.log(lastItem);
 
   return (
     <Layout user={props.user}>
@@ -131,13 +129,12 @@ const Edit = (props) => {
           <label htmlFor="images-container"> Edit Images</label>
           <div className="images-container">
             {product.images.map((image, index) => (
-              <div className="image-container">
+              <div className="image-container" key={index}>
                 <img
                   className="edit-product-image"
                   src={image}
                   alt={product.name}
-                />
-                {/* <form onSubmit={handleSubmit}> */}
+                />        
                 <input
                   id="image-link"
                   placeholder="Image Link"
@@ -147,8 +144,7 @@ const Edit = (props) => {
                   onChange={editImage}
                   key={index}
                   data-index={index}
-                />
-                {/* </form> */}
+                />               
               </div>
             ))}
           </div>
