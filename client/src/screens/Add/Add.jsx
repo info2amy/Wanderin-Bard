@@ -32,7 +32,7 @@ const Add = (props) => {
       images: [product.images],
     };
     const created = await createProduct(submitProduct);
-    setCreated({ created });
+    setCreated( created );
   };
 
   if (isCreated) {

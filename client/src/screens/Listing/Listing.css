@@ -12,8 +12,3 @@
 .products img {
   width: 100%;
 }
-@media (min-width: 1000px) {
-  .products .product{
-    width: 40%;
-  }
-}
