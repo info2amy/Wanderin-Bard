@@ -59,7 +59,7 @@ function AboutUs(props) {
                   <img
                     className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-                    alt=''
+                    alt="LinkedIn"
                   />
                 </a>
               </div>
@@ -94,7 +94,7 @@ function AboutUs(props) {
                   <img
                     className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-                    alt=''
+                    alt="LinkedIn"
                   />
                 </a>
               </div>
@@ -127,8 +127,7 @@ function AboutUs(props) {
               <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
                 <a href="https://www.linkedin.com/in/gylych-mammedov-286898200/">
-                  <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-                  alt=''/>
+                  <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" alt="LinkedIn" />
                 </a>
               </div>
             </div>

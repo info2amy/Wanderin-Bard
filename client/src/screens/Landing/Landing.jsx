@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./Landing.css";
 
-
 const photos = [
   {
     info:
@@ -55,7 +54,7 @@ const Landing = (props) => {
               return (
                 <div className="photo-info" key={index}>
                   <div>
-                    <img src={photo.url} className="carousel-image" alt=''/>
+                    <img src={photo.url} className="carousel-image" alt="products"/>
                   </div>
                   <div>
                     <p className="landing-photo-info">{photo.info}</p>
