@@ -10,6 +10,7 @@ import Listing from './screens/Listing/Listing'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
+import AboutUs from './screens/AboutUs/AboutUs'
 
 
 
@@ -53,6 +54,9 @@ function App() {
         </Route>
         <Route exact path="/products/:id">
           <Detail user={user} />
+        </Route>
+        <Route exact path="/aboutus">
+          <AboutUs user={user}/>
         </Route>
       </Switch>
     </div>

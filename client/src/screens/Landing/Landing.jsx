@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const photos = [
   {
     info:
-      "Percussions",
+      "Percussion",
     url:
       'https://i.imgur.com/rjqDKv6.png'
   },
