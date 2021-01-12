@@ -65,7 +65,7 @@ const Landing = (props) => {
           </Slider>
         </div>
         <Link to='/products'><div className="btn-div">
-          <button class="btn green">
+          <button className="btn green">
             Shop Now
           </button>
         </div></Link>
