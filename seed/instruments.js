@@ -92,7 +92,7 @@ const main = async () => {
         },
         {
           "name": "Reactable",
-          "images": ["https://reactable.com/wp-content/uploads/2014/12/reactable-museum-exhibitons-2.png","https://reactable.com/wp-content/uploads/2014/12/reactable-live-s6-21.png","https://cdm.link/app/uploads/2012/11/reactable_live_s4_02.jpg","https://assets.newatlas.com/dims4/default/f3ebea1/2147483647/strip/true/crop/1548x1080+0+0/resize/1376x960!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Freactable-live-s6-table-synth-1.jpg"],
+          "images": ["https://i.imgur.com/XUG1Hky.png","https://i.imgur.com/3spyAis.png","https://i.imgur.com/RUMycol.png","https://i.imgur.com/u0TiJaP.png"],
           "description": "The Reactable is an electronic musical instrument with a tabletop tangible user interface that was developed within the Music Technology Group at the Universitat Pompeu Fabra in Barcelona, Spain.",
         "price": "20,000",
         "category": "electronic",
