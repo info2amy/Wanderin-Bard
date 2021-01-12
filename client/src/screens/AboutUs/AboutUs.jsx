@@ -5,7 +5,7 @@ function AboutUs(props) {
     <Layout user={props.user}>
       <div className="about-us-parent-div">
         <h1 id="about-us-title">Meet the Band!</h1>
-        <div id="about-us-bandpic"><img src="http://clipart-library.com/img1/865633.jpg" alt="picture of a band"/></div>
+        <div id="about-us-bandpic"><img src="https://i.imgur.com/sGzXJf2.jpeg" alt="picture of a band"/></div>
         <div className="about-us-profiles">
           <img
             className="about-us-pics"
@@ -16,10 +16,8 @@ function AboutUs(props) {
             <h2>Amy Kumar</h2>
             <p><em>... on (Data)Base Guitar</em></p>
             <p>
-              Thomas Sten is a software engineer with over 15 years of military
-              experience. His passion for learning combined with his optimistic
-              demeanor has resulted in a richly rewarding experience as a
-              software engineer.
+            Amy is an improvement-oriented designer of solutions, an unraveler and restructerer of puzzles, and a creator of forward-thinking innovations. 
+              She is looking for an opportunity to impact quality, usability and efficiency through design.
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
@@ -29,6 +27,15 @@ function AboutUs(props) {
                   alt="Github"
                 />
               </a>
+              <div className="about-us-linkedin">
+                <p>LinkedIn: </p>
+                <a href="https://www.linkedin.com/in/amy-k-0b0a921b3/" target="_blank" rel="noreferrer">
+                  <img
+                    className="social"
+                    src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
+                    alt="LinkedIn"/>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -76,7 +83,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>David Verghese</h2>
-            <p><em>... on (Object.)keys</em></p>
+            <p><em>... on (Object.)keys()</em></p>
             <p>
               David Verghese is a software developer and musician from City
               Island, New York. He is looking for an entry level position as a
