@@ -1,13 +1,13 @@
 .about-us-pics {
-  width: 200px;
-  height: 200px;
   object-fit: scale-down;
-  margin: 10px;
+  width: 100%;
+  padding: 20px;
 }
 .about-us-profiles {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
   background-color: #debf94;
   margin: 0 auto;
   margin-top: 30px;
@@ -26,7 +26,7 @@
   margin: 10px;
 }
 #about-us-title {
-  color: #FBEECE;
+  color: #fbeece;
   background-color: #4a4a54;
   width: 80%;
   padding: 20px;
@@ -37,13 +37,54 @@
 }
 .about-us-contact {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.about-us-contact img{
+.about-us-contact img {
   width: 40px;
-  margin: 0px 0px -30px 20px;
+  margin: 0px 20px -30px 20px;
 }
 .about-us-linkedin {
   display: flex;
   margin-left: 50px;
+}
+.about-us-parent-div {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 500px) {
+  .about-us-profiles {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .about-us-linkedin {
+    margin-left: 0px;
+  }
+  .about-us-pics {
+    padding: 0px;
+  }
+  #about-us-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-us-pics {
+    width: 300px;
+  }
+  .about-us-profiles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .about-us-profile-info {
+    margin: 30px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .about-us-profile-info {
+    margin: 30px 50px 30px 50px;
+  }
 }
 
