@@ -5,7 +5,7 @@ function AboutUs(props) {
     <Layout user={props.user}>
       <div className="about-us-parent-div">
         <h1 id="about-us-title">Meet the Band!</h1>
-        <div id="about-us-bandpic"><img src="http://clipart-library.com/img1/865633.jpg" alt="picture of a band"/></div>
+        <div id="about-us-bandpic"><img src="https://i.imgur.com/sGzXJf2.jpeg" alt="picture of a band"/></div>
         <div className="about-us-profiles">
           <img
             className="about-us-pics"
@@ -27,6 +27,15 @@ function AboutUs(props) {
                   alt="Github"
                 />
               </a>
+              <div className="about-us-linkedin">
+                <p>LinkedIn: </p>
+                <a href="https://www.linkedin.com/in/amy-k-0b0a921b3/" target="_blank" rel="noreferrer">
+                  <img
+                    className="social"
+                    src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
+                    alt="LinkedIn"/>
+                </a>
+              </div>
             </div>
           </div>
         </div>
