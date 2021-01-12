@@ -50,9 +50,9 @@ const Landing = (props) => {
       <div className="landing-screen">
         <div className="carousel">
           <Slider {...settings} className="slider">
-            {photos.map((photo) => {
+            {photos.map((photo, index) => {
               return (
-                <div className="photo-info">
+                <div className="photo-info" key={index}>
                   <div>
                     <img src={photo.url} className="carousel-image" alt="products"/>
                   </div>

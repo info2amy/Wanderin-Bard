@@ -62,8 +62,7 @@ function AboutUs(props) {
                   <img
                     className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-                    alt="LinkedIn"
-                  />
+                    alt="LinkedIn"/>
                 </a>
               </div>
             </div>
