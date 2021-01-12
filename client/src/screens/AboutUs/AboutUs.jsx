@@ -16,7 +16,7 @@ function AboutUs(props) {
             <h2>Amy Kumar</h2>
             <p><em>... on (Data)Base Guitar</em></p>
             <p>
-            Amy is a improvement-oriented designer of solutions, an unraveler and restructerer of puzzles, and a creator of forward-thinking innovations. 
+            Amy is an improvement-oriented designer of solutions, an unraveler and restructerer of puzzles, and a creator of forward-thinking innovations. 
               She is looking for an opportunity to impact quality, usability and efficiency through design.
             </p>
             <div className="about-us-contact">
