@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./Landing.css";
-import { NavLink } from "react-router-dom";
 
 const photos = [
   {
@@ -55,7 +54,7 @@ const Landing = (props) => {
               return (
                 <div className="photo-info">
                   <div>
-                    <img src={photo.url} className="carousel-image" />
+                    <img src={photo.url} className="carousel-image" alt="products"/>
                   </div>
                   <div>
                     <p className="landing-photo-info">{photo.info}</p>
