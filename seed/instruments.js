@@ -75,7 +75,7 @@ const main = async () => {
         },
         {
           "name": "African Talking Drum",
-          "images": ["https://images-na.ssl-images-amazon.com/images/I/61BFeEORehL._AC_SL1000_.jpg","https://images-na.ssl-images-amazon.com/images/I/61b%2B3-%2BfRUL._AC_SL1200_.jpg","https://images-na.ssl-images-amazon.com/images/I/610itMabIVL._AC_SL1000_.jpg","https://images-na.ssl-images-amazon.com/images/I/61tsUBDUNBL._AC_SL1000_.jpg"],
+          "images": ["https://i.imgur.com/VjicfFD.png","https://i.imgur.com/0sP4d7E.png","https://i.imgur.com/81SZsw3.png","https://i.imgur.com/JtE3qWB.png"],
           "description": "The talking drum is an hourglass-shaped drum from West Africa, whose pitch can be regulated to mimic the tone and prosody of human speech. It has two drumheads connected by leather tension cords, which allow the player to change the pitch of the drum by squeezing the cords between their arm and body.",
         "price": "80",
         "category": "percussion",
