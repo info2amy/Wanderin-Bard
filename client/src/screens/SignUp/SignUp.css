@@ -11,7 +11,13 @@
   text-align: center;
   max-width: 600px;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
 #signup-button {
   border: 2px solid transparent;
   background: #76323f;
@@ -27,6 +33,7 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+  margin-top: 15px;
 }
 #signup-button:hover {
   background-color: #2980b9;
@@ -35,6 +42,7 @@
 #signup-login1,
 #signup-login2,
 #signup-login3 {
+  margin: 0.5em auto;
   text-align: center;
   background-color: #ecf0f1;
   border: 2px solid black;
@@ -43,7 +51,7 @@
   font-weight: 200;
   padding: 10px 0;
   width: 100%;
-  transition: border 0.5s;
+  transition: all 0.4s ease;
   margin-bottom: 10px;
   color: #777;
   outline-color: #438496;
