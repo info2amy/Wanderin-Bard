@@ -67,7 +67,7 @@ const main = async () => {
         },
         {
           "name": "Vibraslap",
-          "images": ["https://images-na.ssl-images-amazon.com/images/I/71eIaIri1RL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/71LmapVqkQL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/71g0eyuLBoL._AC_SL1500_.jpg","https://images-na.ssl-images-amazon.com/images/I/61YZSB9wO4L._AC_SL1500_.jpg"],
+          "images": ["https://i.imgur.com/7Jj2kdf.png","https://i.imgur.com/rZ5bltD.png","https://i.imgur.com/2DWBL0d.png","https://i.imgur.com/eXNOrSk.png"],
           "description": "The vibraslap is a percussion instrument consisting of a piece of stiff wire connecting a wood ball to a hollow box of wood with metal 'teeth' inside. The percussionist holds the metal wire in one hand and strikes the ball.",
         "price": "40",
         "category": "percussion",
