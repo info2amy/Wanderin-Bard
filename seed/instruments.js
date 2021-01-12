@@ -100,7 +100,7 @@ const main = async () => {
         },
         {
           "name": "Otamatone",
-          "images": ["https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ0aBj6xQv6v6MHWyAi2r70J63lbjByj6Okrk0amApzqSmZendeLfxNQA2_Iu9gq6NJKQp7vYAFu-oeTcUcQ_Nv0cnFJXLZ0HGcFMcH83r2-23KchukVtQm&usqp=CAE","https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8J1ZiAD0UeVZa5K6C-jqgKp4YctrxsKeZUfZpZrLwhaJKXXqOgbih4Gpw3YKytRU1Ur_7gCLpkYm5weuCy6VEh7cVld25NQ&usqp=CAY","https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRcblc0d8F68v98gtRcL-dJJtyScYik3BDNp8wTHVO7VbaWg2S9lH6JPb0IcM-xl9chhIQgZTvgStxpgCVYB8JAM3WjrA2w&usqp=CAY","https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKXV9p47y0MwOvt9rUkWtOzFKv1ucXhul6eHgSJdRc-86IHRKAfY9h2pj9nFhB0vL54w2a54xmtNBQhFaR_V1cIMBKWy18&usqp=CAY"],
+          "images": ["https://i.imgur.com/BdvYSj8.png","https://i.imgur.com/87cX78c.png","https://i.imgur.com/gnOMQ6O.png","https://i.imgur.com/fK6SiWq.png"],
           "description": "The Otamatone is an electronic musical synthesizer. It was developed in Japan in 1998 by the CUBE toy company and the Maywa Denki design firm. The Otamatone is a singing toy whose body is shaped like an eighth note (it also somewhat resembles a tadpole, 'otamajakushi' being Japanese for 'tadpole'), with sound emerging from a 'mouth' on the notehead. It requires two hands to play: while one hand holds and squeezes the 'head', the other hand controls the pitch of the tune by placing the finger on a ribbon controller on the stem; a higher position on the stem creates a lower sound.",
         "price": "70",
         "category": "electronic",
