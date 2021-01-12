@@ -34,7 +34,7 @@ const main = async () => {
         // Wind
         {
           "name": "Native American Drone Flute",
-          "images": ["https://i.imgur.com/Pden64G.png","https://i.imgur.com/oIa1v29.png","https://i.imgur.com/tbeRSb6.png","https://i.imgur.com/m3bmDzX.png"],
+          "images": ["https://i.imgur.com/m3bmDzX.png","https://i.imgur.com/oIa1v29.png","https://i.imgur.com/tbeRSb6.png","https://i.imgur.com/Pden64G.png"],
           "description": "Native American Style Drone Flutes are dual chambered flutes, playing a drone through the left chamber, and melodic playing on the right. We call this a hybrid Native American Indian Style Flute. This style of flute originates from the Mayan and Teotihuacan cultures, where it was commonly crafted from clay and played by villagers and priests. It has been adapted into a wooden flute that combines the traditional Mayan dual chambered clay flute, with the totem and slow air chamber from the modern Native American Style Flute.",
         "price": "250",
         "category": "wind",
@@ -42,14 +42,14 @@ const main = async () => {
         },
         {
           "name": "Sheng",
-          "images": ["https://i.imgur.com/Bmxscrs.png","https://i.imgur.com/pLo7M8x.png","https://i.imgur.com/Nhb4B5J.png","https://i.imgur.com/5swbcsp.png"],
+          "images": ["https://i.imgur.com/Nhb4B5J.png","https://i.imgur.com/pLo7M8x.png","https://i.imgur.com/Bmxscrs.png","https://i.imgur.com/5swbcsp.png"],
           "description": "The sheng is a Chinese mouth-blown free reed instrument consisting of vertical pipes. It is a polyphonic instrument and enjoys an increasing popularity as a solo instrument.",
         "price": "180",
         "category": "wind",
           "origin":"China"
         },
         {
-          "name": "Conch shell horm",
+          "name": "Conch Shell Horn",
           "images": ["https://i.imgur.com/QQOXTvY.png","https://i.imgur.com/nFwH1Oa.png","https://i.imgur.com/pIig2us.png","https://i.imgur.com/Gfoid8E.png"],
           "description": "Conch, or conque, also known as a 'seashell horn' or 'shell trumpet', is a wind instrument that is made from a conch, the shell of several different kinds of sea snails. Their natural conical bore is used to produce a musical tone. Conch shell trumpets have been played in many Pacific Island countries, as well as South America and Southern Asia.",
         "price": "50",

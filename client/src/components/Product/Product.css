@@ -60,6 +60,12 @@
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .product{
+      width: 300px;
+    }
+  }
+  
 @media (max-width: 500px) {
   .product {
       width: 100%;

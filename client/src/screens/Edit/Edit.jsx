@@ -136,8 +136,7 @@ const Edit = (props) => {
                   className="edit-product-image"
                   src={image}
                   alt={product.name}
-                />
-                {/* <form onSubmit={handleSubmit}> */}
+                />        
                 <input
                   id="image-link"
                   placeholder="Image Link"
@@ -147,8 +146,7 @@ const Edit = (props) => {
                   onChange={editImage}
                   key={index}
                   data-index={index}
-                />
-                {/* </form> */}
+                />               
               </div>
             ))}
           </div>
