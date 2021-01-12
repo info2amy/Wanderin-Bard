@@ -1,0 +1,49 @@
+.about-us-pics {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+  margin: 10px;
+}
+.about-us-profiles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #debf94;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  color: #55252f;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  width: 80%;
+  font-size: 25px;
+}
+.about-us-profiles h2 {
+  padding: 0px;
+  margin: 0px;
+}
+.about-us-profile-info {
+  font-size: 90%;
+  margin: 10px;
+}
+#about-us-title {
+  color: #FBEECE;
+  background-color: #4a4a54;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 70px;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+.about-us-contact {
+  display: flex;
+}
+.about-us-contact img{
+  width: 40px;
+  margin: 0px 0px -30px 20px;
+}
+.about-us-linkedin {
+  display: flex;
+  margin-left: 50px;
+}
+
