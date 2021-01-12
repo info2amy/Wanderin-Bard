@@ -38,7 +38,6 @@ const Add = (props) => {
   if (isCreated) {
     return <Redirect to={`/products`} />;
   }
-  console.log("MyProduct", product);
   return (
     <Layout user={props.user}>
       <div className="login">
