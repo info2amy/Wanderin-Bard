@@ -84,7 +84,7 @@ const main = async () => {
         // Electronic
         {
           "name": "Misa Kitara",
-          "images": ["https://www.vintageguitar.com/wp-content/uploads/MISA-KITARA1.jpg","https://i.imgur.com/ZIOZYiP.jpg","https://i.imgur.com/sU21ssa.jpg","https://i.imgur.com/pruKmxN.jpg"],
+          "images": ["https://i.imgur.com/gwGvNEQ.png","https://i.imgur.com/XTkJHCO.png","https://i.imgur.com/s9BDiDF.png","https://i.imgur.com/CzcQIun.png"],
           "description": "The Misa Kitara is a digital MIDI controller and musical instrument developed in 2011 and discontinued in 2013. It allows for a guitar player to produce a synthesized sound using techniques and motions referential to guitar playing.",
         "price": "900",
         "category": "electronic",
