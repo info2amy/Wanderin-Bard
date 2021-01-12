@@ -5,6 +5,7 @@ function AboutUs(props) {
     <Layout user={props.user}>
       <div className="about-us-parent-div">
         <h1 id="about-us-title">Meet the Band!</h1>
+        <div id="about-us-bandpic"><img src="http://clipart-library.com/img1/865633.jpg" alt="picture of a band"/></div>
         <div className="about-us-profiles">
           <img
             className="about-us-pics"
@@ -13,6 +14,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>Amy Kumar</h2>
+            <p><em>... on (Data)Base Guitar</em></p>
             <p>
               Thomas Sten is a software engineer with over 15 years of military
               experience. His passion for learning combined with his optimistic
@@ -21,7 +23,7 @@ function AboutUs(props) {
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
-              <a href="https://github.com/info2amy">
+              <a href="https://github.com/info2amy" target="_blank" rel="noreferrer">
                 <img
                   src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
                   alt="Github"
@@ -39,6 +41,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>Thomas Sten</h2>
+            <p><em>... on 'Strings'</em></p>
             <p>
               Thomas Sten is a software engineer with over 15 years of military
               experience. His passion for learning combined with his optimistic
@@ -47,7 +50,7 @@ function AboutUs(props) {
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
-              <a href="https://github.com/Jiggorama">
+              <a href="https://github.com/Jiggorama" target="_blank" rel="noreferrer">
                 <img
                   src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
                   alt="Github"
@@ -55,7 +58,7 @@ function AboutUs(props) {
               </a>
               <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
-                <a href="https://www.linkedin.com/in/thomas-sten/">
+                <a href="https://www.linkedin.com/in/thomas-sten/" target="_blank" rel="noreferrer">
                   <img
                     className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
@@ -74,6 +77,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>David Verghese</h2>
+            <p><em>... on (Object.)keys</em></p>
             <p>
               David Verghese is a software developer and musician from City
               Island, New York. He is looking for an entry level position as a
@@ -82,15 +86,15 @@ function AboutUs(props) {
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
-              <a href="https://git.generalassemb.ly/davidverghesegeneralassembly">
+              <a href="https://git.generalassemb.ly/davidverghesegeneralassembly" target="_blank" rel="noreferrer">
                 <img
                   src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
-                  alt="Github"
+                  alt="Github" 
                 />
               </a>
               <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
-                <a href="https://www.linkedin.com/in/david-verghese-a308a011b">
+                <a href="https://www.linkedin.com/in/david-verghese-a308a011b" target="_blank" rel="noreferrer">
                   <img
                     className="social"
                     src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
@@ -109,6 +113,7 @@ function AboutUs(props) {
           />
           <div className="about-us-profile-info">
             <h2>Gylych Mammedov</h2>
+            <p><em>... on percussion and (Algo)rithm</em></p>
             <p>
               Gylych is an efficient junior web developer with a Master's degree
               in Web and App Development. He has a complete understanding of the
@@ -118,7 +123,7 @@ function AboutUs(props) {
             </p>
             <div className="about-us-contact">
               <p>Github: </p>
-              <a href="https://github.com/gylych207">
+              <a href="https://github.com/gylych207" target="_blank" rel="noreferrer">
                 <img
                   src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
                   alt="Github"
@@ -126,7 +131,7 @@ function AboutUs(props) {
               </a>
               <div className="about-us-linkedin">
                 <p>LinkedIn: </p>
-                <a href="https://www.linkedin.com/in/gylych-mammedov-286898200/">
+                <a href="https://www.linkedin.com/in/gylych-mammedov-286898200/" target="_blank" rel="noreferrer">
                   <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" alt="LinkedIn" />
                 </a>
               </div>

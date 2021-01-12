@@ -51,7 +51,14 @@
 .about-us-parent-div {
   margin-bottom: 80px;
 }
-
+#about-us-bandpic {
+  display: flex;
+  justify-content: center;
+}
+#about-us-bandpic img {
+  width: 250px;
+  margin: 20px;
+}
 @media (max-width: 500px) {
   .about-us-profiles {
     display: flex;
@@ -66,6 +73,9 @@
   }
   #about-us-title {
     font-size: 50px;
+  }
+  #about-us-bandpic img {
+    width: 150px;
   }
 }
 @media (min-width: 1000px) {
