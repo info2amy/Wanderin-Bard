@@ -13,7 +13,7 @@ The wireframes below depict initial mock-ups of the sites UI. Both MVP and post 
 - Landing Screen
 ![imageAlt](https://i.imgur.com/tQPuvUm.png)
 - MVP Listing
-![imageAlt](https://i.imgur.com/tQPuvUm.png)
+![imageAlt](https://i.imgur.com/gjbPyl1.png)
 - PMVP Listing
 ![imageAlt](https://i.imgur.com/FGczKsD.png)
 - Product Detail
