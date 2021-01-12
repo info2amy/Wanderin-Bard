@@ -1,82 +1,119 @@
 .product-edit {
+  text-align: center;
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.edit-form {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  padding: 1em;
+  width: 80%;
+  height: 80%;
+  margin: 4em auto;
+  background-color: #fbf3e8;
+  padding: 20px;
+  border: 2px solid #b0bec5;
+  border-radius: 6px;
+  box-shadow: 2px 4px 10px #0097a7;
+  max-width: 600px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.edit-form label {
+  margin-top: 5px;
+  font-size: 18px;
+}
+.edit-form input,
+.edit-form textarea {
+  text-align: center;
+  background-color: #ecf0f1;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 92%;
+  transition: border 0.5s;
+  margin: 0.5em auto;
+  transition: all 0.4s ease;
+  color: #777;
+  outline-color: #438496;
+}
+
+.images-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 500px;
 }
 
 .image-container {
+  width: 180px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .edit-product-image {
-  width: 500px;
-  padding: 0 40px;
-  padding-bottom: 5px;
+  width: 85%;
+  height: 85%;
+  background-color: #fbf3e8;
+  object-fit: scale-down;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 
-.edit-input-image-link {
-  width: 300px;
+#image-link {
+  width: 100%;
+  height: 25px;
   text-align: center;
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-}
-
-.edit-form {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
-.input-name {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 64px;
-  letter-spacing: 1px;
-  padding: 5px;
-}
-
-.textarea-description {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  padding: 10px;
-  letter-spacing: .9px;
-  line-height: 1.6;
+  font-size: 14px;
 }
 
 .save-button {
-  font-size: 22px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   height: 40px;
-  width: 200px;
-  margin-top: 40px;
-  background-color: black;
+  width: 250px;
+  margin-top: 2px;
+  background-color: #76323f;
   color: white;
   border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   cursor: pointer;
+  align-self: center;
 }
 
 @media (max-width: 500px) {
   .input-name {
-      margin-left: -10px;
-      padding-left: -10px;
-      font-size: 26px;
+    margin-left: -10px;
+    padding-left: -10px;
+    font-size: 26px;
   }
   .edit-form {
-      padding: 0px;
+    padding: 0px;
   }
   .textarea-description {
-      width: 100%;
-      padding: 0px;
+    width: 100%;
+    padding: 0px;
   }
   .product-edit {
-      width: 100%;
-      flex-direction: column;
+    width: 100%;
+    flex-direction: column;
   }
-  .image-container {
-      width: 100%;
-  }
-  .edit-product-image {
-      width: 300px;
+  .images-container {
+    width: 100%;
   }
 }

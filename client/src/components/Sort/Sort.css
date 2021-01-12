@@ -1,0 +1,10 @@
+.sort{
+  max-width: 220px;
+  margin-left:10px;
+  font-size:20px;
+}
+label[for=sort]
+{
+  font-size: 20px;
+   margin-left:30px;
+}

@@ -5,8 +5,13 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  min-height: 100vh;
+  width: 100vw;
 }
-
+body {
+  background-color: #fbf3e8;
+}
 * {
  box-sizing: border-box;
  }
+

@@ -1,7 +1,7 @@
 .signup-container {
   align-self: center;
   padding: 1em;
-  width: 500px;
+  width: 80%;
   height: 80%;
   margin: 4em auto;
   border: 2px solid #b0bec5;
@@ -9,8 +9,15 @@
   box-shadow: 2px 4px 10px #0097a7;
   transition: all 2s ease;
   text-align: center;
+  max-width: 600px;
 }
-
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
 #signup-button {
   border: 2px solid transparent;
   background: #76323f;
@@ -24,8 +31,9 @@
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   transition: 0.25s;
   display: block;
-  width: 250px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 15px;
 }
 #signup-button:hover {
   background-color: #2980b9;
@@ -34,6 +42,7 @@
 #signup-login1,
 #signup-login2,
 #signup-login3 {
+  margin: 0.5em auto;
   text-align: center;
   background-color: #ecf0f1;
   border: 2px solid black;
@@ -41,11 +50,30 @@
   font-size: 16px;
   font-weight: 200;
   padding: 10px 0;
-  width: 350px;
-  transition: border 0.5s;
+  width: 100%;
+  transition: all 0.4s ease;
   margin-bottom: 10px;
   color: #777;
   outline-color: #438496;
 }
 
-
+@media (max-width: 500px) {
+  .signup-container {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .signup-container {
+    width: 900px;
+  }
+  #signup-login0,
+  #signup-login1,
+  #signup-login2,
+  #signup-login3 {
+    margin: 20px;
+    width: 90%;
+  }
+  #signup-button {
+    width: 90%;
+  }
+}
